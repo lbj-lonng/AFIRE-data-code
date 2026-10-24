@@ -1,0 +1,2256 @@
+{
+  "checks": [
+    {
+      "check": "ACS/Gazetteer processed archive",
+      "field": "age65_share",
+      "compared_rows": 3072,
+      "missing_source_rows": 0,
+      "max_abs_difference": 0.0,
+      "values_agree": true
+    },
+    {
+      "check": "ACS/Gazetteer processed archive",
+      "field": "population_density_km2",
+      "compared_rows": 3072,
+      "missing_source_rows": 0,
+      "max_abs_difference": 0.0,
+      "values_agree": true
+    },
+    {
+      "check": "Drought processed archive",
+      "field": "drought_fireseason_D1",
+      "compared_rows": 3072,
+      "missing_source_rows": 0,
+      "max_abs_difference": 0.0,
+      "values_agree": true
+    },
+    {
+      "check": "NOAA processed archive",
+      "field": "temperature_fireseason_mean",
+      "compared_rows": 3072,
+      "missing_source_rows": 0,
+      "max_abs_difference": 3.552713678800501e-15,
+      "values_agree": true
+    },
+    {
+      "check": "NOAA processed archive",
+      "field": "precipitation_fireseason_total",
+      "compared_rows": 3072,
+      "missing_source_rows": 0,
+      "max_abs_difference": 0.0,
+      "values_agree": true
+    },
+    {
+      "check": "NOAA raw cache with documented unit conversion",
+      "field": "temperature_fireseason_mean",
+      "compared_rows": 3072,
+      "missing_source_rows": 0,
+      "max_abs_difference": 7.105427357601002e-15,
+      "values_agree": true
+    },
+    {
+      "check": "NOAA raw cache with documented unit conversion",
+      "field": "precipitation_fireseason_total",
+      "compared_rows": 3072,
+      "missing_source_rows": 0,
+      "max_abs_difference": 1.1368683772161603e-13,
+      "values_agree": true
+    },
+    {
+      "check": "Archived pm25 processed exports",
+      "field": "pm25_annual_mean",
+      "compared_rows": 3062,
+      "missing_source_rows": 10,
+      "max_abs_difference": 0.0,
+      "values_agree": true
+    },
+    {
+      "check": "Archived ozone processed exports",
+      "field": "ozone_annual_mean",
+      "compared_rows": 3062,
+      "missing_source_rows": 10,
+      "max_abs_difference": 0.0,
+      "values_agree": true
+    },
+    {
+      "check": "raw daily population-weighted field to frozen annual pm25",
+      "field": "pm25_annual_mean",
+      "compared_rows": 3062,
+      "missing_source_rows": 10,
+      "max_abs_difference": 3.552713678800501e-15,
+      "values_agree": true,
+      "covered_state_FIPS": [
+        4,
+        6,
+        8,
+        16,
+        41,
+        53
+      ]
+    },
+    {
+      "check": "raw daily population-weighted field to frozen annual ozone",
+      "field": "ozone_annual_mean",
+      "compared_rows": 3062,
+      "missing_source_rows": 10,
+      "max_abs_difference": 7.105427357601002e-15,
+      "values_agree": true,
+      "covered_state_FIPS": [
+        4,
+        6,
+        8,
+        16,
+        41,
+        53
+      ]
+    }
+  ],
+  "source_files": [
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/04001_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "d0785bbaf065ba5c4816142bfeef09de1356c6fbfd252e9bf199ed2c5eeaf857"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/04003_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "cf787c010a3d96d494bc0c7d61b4e24aefbfc1259d54346492f79cdab44564c7"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/04005_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "552f41cb4481e66ad245e914f6df241fd00b60fb4b251f23b20d18cc5263fe5a"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/04007_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "d26ef811c9eeeb12a6441e01acafcc175dbc8a84aa5bfd2d016ed84b94bf696f"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/04009_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "57d9c4a8fadc09ce1c1eb418dc0debe5063e6cda8097bfee9486d1dcbb7ed293"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/04011_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "74f9827319459d8527f28e4854452c0679d6e856b6b4cb344b6549d657320697"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/04012_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "55051f8b7af80dd2b9056add0f5cac7f850761fc9be9dec07440270263dc9698"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/04013_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "0301626313137d4dffaa6b62a54437feba608267bc52745987828cb245a17bb7"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/04015_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "dffbdc8382676e4d9978a439c567e7e3a444ef14ecab484a01f0b5b134c2927a"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/04017_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "f9db6a4a16ce98b398f76e42aaf321a8ef7b982ddee8f749fe62f1cab465b2a0"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/04019_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "4f3e83910fbbd418319ef962ca314edc30c1a421fe0bdb237410edba33cae7a9"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/04021_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "8091e0e18e5df8ebbc29cf5e2f076459ba89f6556e7f27062a3a41842a25c81a"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/04023_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "ebf74c3b65683b4e5416036e7b3200b769d2be57e73562c9f82db96bc873c379"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/04025_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "58a942446c2aeb0fb60423029583e58a336a88b76a55009e121cf32f4b884a61"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/04027_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "a757f82240d2b4cf83fd6e0e72ec55f38cc744ae27b754a7392e47dc3739bbdd"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06001_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "2189d612b61a69c1663f2f691e300fc41246cb9cd5e1d33d3882675ee08555ff"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06003_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "22332e6be897b46ee3a56fd7ddf329c597ed24b428fe140ffc24b6bd709df20e"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06005_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "6eb5e5e502c1d010d4042f85baf2359efbe9fb389c8f2bb36b5d256381218a14"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06007_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "cd6a31da8ae24b43df5110656dc77690a191f850bf3d222da96c20f161671cdd"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06009_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "340c17366cdb64f7fe43215d3f55f4c4d0bd4e26549f203165810e3f74cc8b84"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06011_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "412742b0daead8a88fbedf8341451e1d2c343076aaeceee9f40ca999db734068"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06013_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "012d99cf121ea75271c64852f6116e11a2463f86207fdfd60fa6331fb1d6da44"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06015_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "e70f4258a5826a3ec8fd2083900aacde7e4f83c85f31dc72864f0eaeaee281b3"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06017_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "1733daddbf0ee00532cfa98739da0816fbdb542bba0a872b5e031480c3a739b7"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06019_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "3a3cca9e085639744ee7a117b11abeec670fd149a04d6c69f4406d038ad04e5a"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06021_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "e635169cf57b2b5fd64d56dc6405260fbf8f80f9cea230ccfc6a1a0436a639a3"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06023_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "73e40c8f1d9b4476c739ef85a090eac6e567c0a9662b62a0833388acffcb1219"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06025_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "e959434bc5d9286ef0d84efa0e0840d850b8ded4cfa028b8da610b2c71cc2167"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06027_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "63f372895f8f054e70d521d1db6fea2b78a43149841c4f7e0a5b711ccff502ed"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06029_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "2100106fc0dbf2f2424b8f7745f812932bb9527fe24577d15dbae21332b6bb86"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06031_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "85a00be84c8dddc237b2706d50c6275586503fdceb6f16f23cd5151dfa03ee02"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06033_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "8810aebcfe6296b291a80c393e6b87cf577ca85b4bca13ac8a028d422fc2272f"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06035_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "6714f6029979b15fcf88d0b1764ad2289739a4188c46d85fd198251c63241a78"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06037_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "446682e874229098d240ee69c557332f35a56aa0011017ce6eeae664f895a048"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06039_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "95d6ff3e4c3380af3e759d091729fb1179f7c3a71d2dbc54f8e7971ef962db90"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06041_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "41f30678344dd675a0bea12624eddb245dc5559d9fe597501e426668e72edf04"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06043_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "3be58ce04e96082584a9904387f9a3ff83743114496175033f8a35deb8fa0042"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06045_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "5a0c45904cd6255e65595ce2db666fc24a78802fb1372e8487679495cd2501dd"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06047_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "5b33393f015c51d26a2c6d5ad68bc63eb7c1d191197b946e0f587e05bb89232a"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06049_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "f01939bd972e0705be134c123c3a067d6b2d0b532a580da4634945ead9f7d460"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06051_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "86163d9e766ad12b1c41b395c5268da15a1dfbd61d54d281959f06b8c603b8bc"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06053_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "dc0a70a38d5e37e37bbc6baa8c977194c5b92201a85f03faf0ce2ba3e5af8baf"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06055_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "7b08a7e4117eb108b46509ee5209bd0e85d405e4f9166b9646306c13a03c2c85"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06057_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "9672cdf5ec9d893e7c664ff95cdbbd887f7e04f8ca6a56d226e1ed467360e645"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06059_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "4bc0bef4b03c69afd3063a08a9e1575bdf42991e56846b6802152d62d6535ccd"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06061_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "3a26accb0487947dedd24a5dfb64b741c9489d7a4fe5ed4a13388fa46151eb85"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06063_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "dea6721264c01062757bcb2530ad8f8832b9b1775b17c137d28b60940ec4e760"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06065_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "dadbe70697b4359e414254641a0f44a64325fa4e2ffb16f50c0950751d1c3ecd"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06067_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "7c2e045b7d9e09a3cbcb59efbe77d47d48d641c3f34f221c474be8c879c30b7c"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06069_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "2924836ff532177ea0e8128216d29863728e5ef68dc59023f18f7621ed8f39f7"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06071_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "11a94544facd6d03c73185a7dd62fbf16630b22356d758ecab3ed1b664585bcb"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06073_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "3c073444b6b63468afbfea43601c668a0d0d5dbedd1acbe02492849197108b2b"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06075_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "2b19f5a777dbf4ca543fe28a7932417414d355208fdba73a47fc1d93ebf92ffe"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06077_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "0cd294db762bcaa5208411850a0621164b5ef4ce61057ad33271b51a6eb4d1e5"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06079_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "3cc82d5e0c1e50ac78aac46fda7034f27f939d43d3224be17e7d2116832b6314"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06081_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "64f9e489078e0f645215c4c801a6ba4be283277f5ad2b572e7713bf05dd9c37a"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06083_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "1578f822c23104a8765ea4a544e04fe186c533401ed8d9dcec3ce58d7f8df282"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06085_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "47fe68a28a48ce47169eb17728884e57f2b9bdcdc9492ff1fb918b811198a748"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06087_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "e97f5cc563a2642105c47836545f70dcde7ed1af4854fb61d3e552dcadc5e836"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06089_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "e6a90c5813a9aa692dfcfac12a077e9383dc8860aefba8ad6c1866056ae7e7bc"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06091_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "38265373c6cde534cdf983046194acc52468d312e3894331ee8488557d4de361"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06093_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "89538eb24f3246c837dab666836e5337d231ed6426275b76457b6960aceea864"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06095_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "652eb08d5b06da0c8421cdd363fcbaf06967d9dc92d80d5fd2921ea5ff934b9e"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06097_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "fd765bb0788fff0601bb17e53a7133b48ce249d323abead4c4d05c415a22f963"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06099_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "ff9127f4122675386f4e927cdefe89b38027af412289fc20ce46f5444e63fc09"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06101_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "30d1dc9fb45557fbc60a3a73b62e24fa56a9f0b94c247158f5a25f61b2ffee28"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06103_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "732b68fcbf5a255e1ec981b38dd6ad9fb8836881ce8bde0e5adc4132f9a59e2c"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06105_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "dba0cd94195709b75d1e058bedf8c328cb45a47f84584a29f584450ab91eb47c"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06107_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "9ebc352e61d7cf79c486283edf8d2e15c95588e9f4166b49e3734f5a94f6cb84"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06109_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "170b5d26c9b8ce86e187eda77230d8aa439d3dd45f749f6231ff36e522ef426d"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06111_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "8e371ec142b460fab90b07162b146f01bbd2085c50751d9262de99816cf0901d"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06113_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "4092a84ae932f695eecb9002f15b1853d771edcb1ada6a71efd996e92e05a794"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06115_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "cfafc4ad39304babede4e656a04c44f7c14b11fd32cd2d2bbb15a70814196032"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08001_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "df682e63c6249d57378b9900d8d902262d873d454a9e75d3118c85f4784eb08b"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08003_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "0bec90de2f7ebdf31d6da071b81fe557e73818a4e7022487789e91247e401191"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08005_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "da3c2ca994955aa4127821ad846e30be3d0aebf85a848062d1d8989b00a8efc6"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08007_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "9ccb95fe9114c57c4df15e0a9dd491fc3b033c646b1d62fbda5cc94f39d35fbe"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08009_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "e822a0ebc6ac1da671bd504b0b1370d52cba4af12d5ad63fff29dd9ee38a97d2"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08011_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "e725bd319f52309a38e35894512359059d4cf8bfc6c92b22c8d1bdb1ee065324"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08013_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "465f2f71cf4e6b25966e6943854c80f86b19adf3d8c6fab3de95578031aa87d7"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08014_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "5da9f4e30c6ef8ea0d191fa0c46a425bc753b95780717193ae7ae351373ea7b9"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08015_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "0e6164cef09d9e2b2aac79a231e5cff9ded0f9bb40fa548e437c47813eff6b9d"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08017_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "426a04d400eb4b97bb638221ce9636f2e5ad4e9328584d4d9e4a47ae65caae54"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08019_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "060e67ca355c16731f23577d344192d686251ecc897185bcffcc248f76c6dfc4"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08021_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "900a52bb707282540f6e2745ed7a9c653705f8b7d9ecec84eb9b23156765a91d"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08023_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "35ed3a941777d0c47b97b8c905765449f1a1db56c9911fd1dfaa2c9c060d2bbb"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08025_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "8b44d30edc8a1a4fc49af760f79819d05c7ca6ed3b3eaa152634affaa7cfe3dc"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08027_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "bd5b4ffd0b982e93dbbbb911da2f764bfffdd4f964d5f47c36609d9f8f5a7bdb"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08029_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "f462aa4f751a9b269f2cca2e07913471a35309856ef3d5a919e0a3ff76fb1f4d"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08031_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "58f9fd9f6e7e92af00b08f0d13b02df0ac1eb1c1d37e5573b461ab1576b22ea9"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08033_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "345de21ef116cee0bbb74ad183d1bc78a5f510bc2a69b0e8b55ac17718d6a970"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08035_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "11e976342a6151f6e805f253bd12770831fb39c50d8f3f2236120bf5fb01515e"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08037_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "fce4020b1db9588a9aff5da3975adef2311c028b567f6bae0a92a6fe0bc9137c"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08039_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "0c0dea37e5ca8733f10989d44ee31ff46164828f65541750ec074f064e9c4606"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08041_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "daee8c7583d4d77beefc40f6c9d66427aab5507c734e4dca4458ef4e344c33d2"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08043_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "82a29487af40aef2af9a36912e1a8192506a59fba683f934adfadf4c2726de29"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08045_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "32d92b7f43b4cacde206dac0609aafddad85a530fe648a5af4b15a3c2a5e16b7"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08047_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "c68a1981f7e47ea93e6d32edb05089a741d37bb36271b6881cfaf980d0739ef2"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08049_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "d8b016ee1320254f3157da517046a37e307f0e420e64dcafddb473448ac52252"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08051_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "2168775b90f5fc3ed0b81dcfff001646b4db680c0522c731ca365668574ed3b9"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08053_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "b7a8a8cd743d12f6e854706ac661a08a5c5bb5c946e085c477267a65fc6d74f5"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08055_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "f264dd43038474405d5d125332984eca46d5e5896aba2f9c3e2549f025c45230"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08057_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "b5dfbdb9d7b9ef24c7874284d4f527d4dfd3c45ec949b3881c0424b322cb0658"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08059_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "313cabf171d762cab7e53069cf87294b0d39fb2768c670e8db4118e3f7158880"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08061_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "cfae13a2430bba0e85eb7609c4b1f8ec9c36ecdf53bca3ca1016bd9f38e211fc"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08063_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "2c6adfc1edafbd6c03608a1237f5cf7855c64e6ff02d5ea290a0cf615bd5ff28"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08065_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "96751d7d7c43fc7161d76a1a7082f58a5c22204c1c9075a988a211a2e059f0d8"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08067_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "215701cdd788cb667e8eb464579bb9aeb0f58ca7fd91e1d57e05735b2ae54188"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08069_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "101374a0f6db6d7fded267e09c09065dce594691c4d04fe81dcae860ef23aa01"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08071_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "cd9ae4db57209b131e0111ec96b722cf5e8d28612883ca28ac1f88fff8c7e328"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08073_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "8d8870cfdda2c420c6cd5962f40a8aca553ee28596bc0d5291067b3beaf970c4"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08075_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "72a286a5b3b3359e28d87f948921813ee930083a1d85efa487bb18fffa6705e8"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08077_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "f1d4bc5aa83b348a62760152916fc8fc5b19c4e9c79f89f14abbef9820c86913"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08079_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "bd486fba4eb9a6b318f72b6fab9e5c0437886797aa20ac3c58ef7f316d5a0b98"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08081_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "243570387a06caf95e3e12327115b2d5af7d56bb8d3e6e21ec73f2250799063b"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08083_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "899c053c7dc17a148826681252bf19a5280f259b743544afe78743aedca42db8"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08085_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "947fa20cdbd6c6ed3c00645f29e13ab0aaeb8b001bd3c716823a40b506682290"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08087_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "d5b9e2e0c7e231a3bb937e5971ce0b0ac6df3c850e950efbbca9977d79c4de78"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08089_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "d17e5148a2fc6bde7352305659513277a36e23b4ae658f75d9628d7baa66f8fa"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08091_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "349d158326b5d0c52b1b0eafc9f765b70fa42214b3719e59971c5ab5064198cd"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08093_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "530130c68794103cb134cecbfec797e0286f2609815819d8efc109bb923ed557"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08095_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "0d71593e10b00e29998ce65239746cdcd9210a4ec87bb3c76860bfd7da8b2b1f"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08097_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "4e615e3b3705d8ce324404807608be6b22bcdac3c48becdcd8c6ec36820b50cd"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08099_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "65383648cdeed25a7b81b97566da79a7ca7214322f47d915f9827d94da86ab63"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08101_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "be70c74cb516b1e4aa0924545cf2216955e3ead54e1b1c45acf4734f147358a5"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08103_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "97aa571a01df704617cc1792e7742aa11bb58d70fe4a841b7c399e9c2d323e8e"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08105_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "940a41cdc8945ac575cc1c2dcb583f4c0448611c7c2441b469ba9ec59617992a"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08107_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "e1caee7ac5f11120aedc4a4dc308215d171a7f353a10e2eed28846a460bbc7d4"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08109_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "8d44035321fcd586b407d8ae011c9f5f87ea6ba7ba229782944f3852ae0a99b6"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08111_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "1f9899026168d749190e75567ea2e28ed2b65a13b6e52d573a86a510ae3ad4aa"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08113_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "c728a654b85e295851b17b609c27bbf5626884354c12538a84019959825c321d"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08115_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "fa0737b9631cf9e52a1e2d4d9e6e24e28e793f2e53946310fc868baa2410738f"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08117_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "0b37d2da80feec17ff22861caa715ebbc5ff23ccb16c56d386426ce0f1d020cd"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08119_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "e01ccaa65e743d9036cf0719b4235168958f77eaa0f955c44f5da38e1b4b8b07"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08121_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "460256532a283c3cd089ce0503d8d12b93d48f41bb7d84e3a3458c2b81601b03"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08123_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "8616e7383115649ab4ca43888644b3809243f947f699e502b893ac3572506f65"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08125_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "600fee19815de03b3f896983f9cf0edece47c41ebb946bb90924afd5a91813e7"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16001_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "3730966afac58a69117e2cd34e855d4103df1aac535838176aa57b37b963a093"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16003_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "87918f6ea9ef3c65b19491ee9a17cf04822ce147624fc71b31c0aa6c160b1dc5"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16005_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "23977d09b82eeceab7c03065a2a52ded7039bbac73bc86013964620ab238cac3"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16007_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "9910212ccae686367a705a379f6a1cd7d4239457c4fe9ad589cba2f7d75cfebc"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16009_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "e42c01b2748e45a23c9f36aa8cf8d701f0d29db3355a3e706a6c51e846df929e"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16011_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "120cf1d14f7fefb7c32c671c204b6db96b4704938e8db953944e7f8d3d15049f"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16013_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "890fd8510fc554616eb4255c2c1243729d984f49edc1b3ee44e4184f0b125f30"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16015_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "a6115af9247a41c69d5c7ed6d09ef76124ed4716d14a9893ef9951b545e4a733"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16017_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "b1eb83e33f472a104a0dd5d0e2ca44d0ee85e7cfb98d1a302e4b89904debbc18"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16019_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "429fc1e051cec1a90ae2394d353490ef66f358fe61401a1570989e676171cb01"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16021_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "0aa0e4385d38c399b22dab04e8ba0674f05a2559fbdc03d12959ae969061994e"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16023_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "2bb69d5b59de7988c0136e5b751a015bfdf7f8b93c14aac37f51a218a9c2d044"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16025_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "17519709e0a947042575d8d17b2f8043f02643cc0ce5ef71a7099a2b9868847f"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16027_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "a5c692eccfe4533061b059cfe2275e3aed03f47ec2c2488c70f632b5f81c220e"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16029_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "94d09045b1033cb207e8936b36896d3ff8e243e12720040750bf8a6994fcd277"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16031_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "c6477460ab255a8012ed3e42a06ea7c28ae8dde05393211a587a6b6a1df8f5f9"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16033_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "21a806037fdaa3f0c9b8d2ebe82bdd8367eb2a83f529d7dcd775eb1704768fa2"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16035_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "f194ecd249e1320b895f6164fd8412d88cad38bd84a6ec2c1632131d38e3ab0f"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16037_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "9361367914ff524ff5814592098c0d827538ad5fd508efbe41c3d930b0c38242"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16039_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "c7ec1399174bc535cddecccbed52142513ccde1235e787c35e5009ed27a9bab0"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16041_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "66186a2b019f8f9c4d2e87d4a4144bdd26d2f17c1db6a181e857064076335215"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16043_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "017fe8656ca76baa5f6107086fe4cba37ff8eb8b4879e72d31455c5714e2c835"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16045_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "41d508877cef3ce1684a67efd0b0f1360fa6fd62842bee1f66b7fb2b7c5523ee"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16047_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "6e2cddc21fe90932a21231478571cec54cfde3daeea429c92a9ba070c73befb2"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16049_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "a493cf9f6d1f09a4d1b6561211f7521aa6018fcc42c857df17e7b8e54ab98da3"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16051_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "9be962603f528829f371077bec5613d91f53b8f0d9554ff60727ef91f0228818"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16053_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "752294ad9d77d50b7be698bc4e4798fbb1700bd7f274250ecdc5833691bd5a25"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16055_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "3b91850a31a1d4a493c711e97176c6b5eb0344241c206559d0f611202eca85f3"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16057_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "3aec61df997591843ba77e82599536932f435a1fab4bbbbf866ef1f4f01e5a6d"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16059_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "dbd9e5563c6bafcef96b973fa561f747fdee358d13703042f849ea7ec07f9636"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16061_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "bc5626644d0b66ae2e96b447c226440c3716573febc8acf72e5fb8db52eca00c"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16063_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "148dfd806150601228cb05debaf124a16776b3bab4ecb9f8762af9dd68aa41f3"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16065_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "109c56912ecff29aaa55a85360a64d6b362f9dec640a980bb3a3ca160d97d732"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16067_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "c2adaf364cbc6c15987be26ce0255e4d2001532f0fdd37d2d7b9b224cfbd46da"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16069_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "678b42bacb621d4c4942c7b5032e89db0477a8794dc063be4f4fee1fc5341170"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16071_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "d3424b7622ac0b132b349701ba08f9ff1f1399f366d6639b359faf802f02bd66"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16073_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "b9dc0b197d275d0ac76a1267b88fbcc970732de0eb26a6fbf3c21eaa6de4957a"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16075_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "b6b6a31db0d329b9bf07ab4d81d47ffdc9691983ad02e4752fbcd85f6a9c2431"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16077_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "a7abd692c03658f19c91a96c34228618111a52f5229c0e38b3f855aecd398453"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16079_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "05b519a2dabf92e076ccec399e40a513373581af42980694b21f6065354ebb12"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16081_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "1c1840fa3e3e0228b31633d988694edab7c55ae1f8d4c9885897e3f776baaac6"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16083_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "d767aeb60fab340c55bcc9a86382fe9b4f759ba577b971d4d93167d865da798e"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16085_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "c047f18052572d6a9cadc657021a49fc12f2a4ab7bd9062f8f815e13dedd5153"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16087_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "3186178cb933f134ad0ce3a22ee4154b92eb463c4c19aa2c09f17916ce5fe8fa"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41001_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "8ed117efeb5b3be0725fa8c4aa44cbb23f30250853e0961f38a6ccbfa5977a92"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41003_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "37b3fbe1f5656258771f5acfb1e83d1fc25ed3d0ad751430c6b683d261a649b2"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41005_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "a37564245ca07180e6c9ae10435653895480322e01e085d66fa996f5792ca2cf"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41007_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "11b25675859e97d297d5f78b02d2689430879ebadf22ee6047e1121de8fb2311"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41009_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "3368a2d9f3a026f42f1c9bc65877a9d34c38d896308fb5293330b984815a5125"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41011_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "8caf128eeb9528fab723e2d307214113154f08340dc8cbd430e7c59a2cec7637"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41013_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "02eab89f2e516eef82e95a0d4e8cdca5106f2ca33967617e85a90a121b81c59d"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41015_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "9a0e1d6ff7e018d0b84612f7bb743145d04b840b813ffb06c3d9f2a624b06567"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41017_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "8027aafa2508f94ed78c2f2535d83cd13542fe04dc117c545130d7255280df28"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41019_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "9c2e2e1c039c563e510232bdc222ed5236094ee0f54652f2673f1e499b8526a0"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41021_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "18c7df29f45923c2bb76de5bc2b493a31717af576018683e4e76f9675926002e"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41023_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "d4f40ad98427f3fb86d3deb64658fe0f5e62f6bb30ecc70f948e6ded7893d33f"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41025_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "0dfadfeefd1db35d2d980e9d2827dd041f9e5ec1026f3343bd6527169169a841"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41027_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "d5ab939ed02210c53d357e0ef0abf3e1e75853cb0d76e2f2013a3342af6cf600"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41029_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "f60575b31ee9e32e7aa69de5d9226af687b67e77da72b54049f35a2ca83c68e6"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41031_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "d02a2528530355730803a1f94034efc6aea6b3c802eb15cd076bdefb419beb92"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41033_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "59a5ccbd6844a78f936a99dadc2a227f9ade5a6b76c168b1b930162df8f90226"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41035_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "6641fce968576d4954adb38bbfe62214de5379eb94b35e084e2c845948de4521"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41037_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "91aa80464fbc434eb776a1e6ef98d61fab8fa8187e652f2bde7e3332ae342d83"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41039_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "527282908e168fab2db18143429e9acef2d4ec5c51122ea5a554c73ad06376f5"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41041_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "5321ccd11f44ec0f7d6bd74a4a3d93c24b34bb135ab46dd146169e36f66ee211"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41043_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "cf2825deba101ec6fe6c139c90c5b7686b154ade44bca8ba3ee10cb3f02e43a4"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41045_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "b003bb1f926864de7f7c6fa3ec4ce05bb81aa2817f3fbf816928430928e2b52c"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41047_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "658604b85293d6f00dbbe6fc70cb0c69a401f9f9959693aff7667a1f52b6d6ba"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41049_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "c7ba7882575adb6629e5132de7e96b801161e78c1d30b1494f4f983c836c929f"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41051_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "64c9fe827f0eaeaee07586fa860b3759f564777574f4797ee35c1ae24c750798"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41053_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "3f3ce6157b642dad88d58e64be28668066b2c7d856cba2a38812d0bb60b18e12"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41055_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "96c2c82eae75c4502206e3c456eac6c3a142f2904abd64b7f5a44eed1d90a7ed"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41057_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "48d21a47ddef6519d1c4e7a2b3629551c552a10c290659c8e50c68838d44387e"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41059_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "877204e2b9e164d83800596932f8fda4e0d921b8a329dfc901d88cfc540fbb45"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41061_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "156d250e86b7fdb0543aadcaeec1ffb722ebf51d1764b909869dfba5a28fd496"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41063_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "445d1f0b9cccbad424feff0786193b5743980f40e74fee2572a0a669ee5f6afc"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41065_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "0f74ad82223c58d78ef1e7dd7d480902cecc615af95dc4bea225ba63539cdd59"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41067_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "81e0988b2b121729e79e77bdaf6a0ce3ac176667432fb13d15ece9a092f6e687"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41069_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "a9ee489959618660b9d6e76b276e5181c983ade6ec6800a99b7b4e744696e46a"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41071_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "2492332a5065d09f09f3550741a9ef4a823f218a790873efe46d9ea7453024b0"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53001_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "938c3ff183c435a8e6efbe51e0d6f04601a083421d0074f81405ee350c26aba3"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53003_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "e7959c0b91e76bc433f9d8f398bdb3d349a1c80f944efb2f5c8bf60fd45bdc9f"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53005_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "f1ca933b6ab5e3476c32709e689e3f114c4433604c318754b0e8d2c2cd94cf45"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53007_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "e6d4fe4aa42b3dae4280ddc1313490bd761cb11fa991fb138a81fd0e31ecb092"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53009_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "a09d5099b85bceca54e5c9941be928ba481c4a5fa88ea80ae6918952f0df82a2"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53011_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "e47c6383a7545dd26f05d59ebb56a0ee056479e97c8be2e171415c69cdca55f4"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53013_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "81c0457e3d42a1661a949cb4facec5cc521d71795ec4b3db2a951d57fc25504d"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53015_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "2fbcf3723a879acae3c65a3bbf14a435ed27d195c65bb5f7111c8b4a6cd479f4"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53017_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "b49bd924d3f737eb4d9f7ae5f3d1e254128e7f20f47b9408ce54febd360bbe74"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53019_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "3fe6cc2e10be5f86104cee4cfdbd04944c149f783dedf88f83b80e1b0e3fc86c"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53021_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "95ad0f6f166430f31633bf4338566e5a39113e9aa591db8924f2c05f5bc3ae14"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53023_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "c8df0cbac42256c38dcef1a90f67f77a56b0a7a922c4dabd3f8ac1a0f112c77d"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53025_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "fa351ef0fff8d1024062a0e3c82a4d941c00e4ab78cdabda7dd34c03fe0c8630"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53027_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "f1d25a929a4ab4b823a3ddf0a3b1d3ade0f6e6c48a8fc56f6df4494f09bc46b9"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53029_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "025bf8084eca7345b0294980e7638fd9bd4d589ef4412e4aa6fed8540ec77143"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53031_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "3135993349ee64388e20db4a7a5f0b5ac9a22771bd51004ce30cacbae150b777"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53033_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "5a691488e216a58c3970c775ab23aad0286eb32db41553a12ef5da4a8862e3f7"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53035_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "893eb0c797dc7e01f2b0fe19ae28ec2857a1da4dba510081b67f3416fb4d0ae2"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53037_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "b8cb861abf0f5773742df9a2e7398fba47b4565ad9488845719bbe0aa1d45f98"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53039_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "7e9c878809a250c820330ca8913e03c42c6634179863f2f66eec441a1c61431a"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53041_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "aee12b2e3bfed5fe3afbbc0e9a729548efefcd1832019a21b12224c0a6882a11"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53043_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "d1d42798aee8d6228f529761d58bcc56856e1b016db2f09e8625b1c882962be4"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53045_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "55c3cf4f322d620c8a09f55d80a9cb7ab40ef40efce3c6a836ce75455480979d"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53047_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "b25e08eb3b1b6c68d9e436febe5a7bda723b229e1984bd85c5bf9ac7e0d7c740"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53049_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "79de8bce7ef19637b3771f628b270b01b1d338dde8a73674afb34646ad2d94ad"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53051_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "e4fd52ba7c9677c072ed64e917497a0987219dd9cb15fb9ffd7f3935ca0de3cd"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53053_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "708fcaf1a0a28c8d72a5427d98f61239387d7bd09e715ea3e6abda3746991a38"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53055_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "e8daece32b93b554f50b872113b9418c04a1093b39ccd977d5c5623e44e0bb6e"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53057_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "75578016ee5e7d94a708713a2547e1bcbaadba1b4dcf9b0c73c1285fae8b7692"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53059_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "f5472a794d2999f5e0b6fba000b661ddffb51045efaf2b4671708530a1d5261e"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53061_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "c25b6c63a01d210e23e7a6f749112471644a96ea07f9e2a8075c86388bb2ec7e"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53063_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "864dead244997bf660129c3c0f1a5e948ace329c2ef736526e7c32000055cc98"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53065_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "ecde9cfb7f9756f120ae05996015bbb907bb5b236e73fa454e8ce9b95b133e5a"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53067_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "5704d0962cf015ae84928ad62d8c933d25a3dd0ec4a1294130f9f04825398d43"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53069_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "17bb5578062f09a16e3dcd17d6f39695774583c421749e72d67bc33ef6f871a3"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53071_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "421b58d2a08a90c2b3d7fab949a50c1a657297aeb0da7a1b1ddc193e64a06fd3"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53073_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "6efe1b0e0465396716d62da2d6ccb3a7790c10abfc009b012f154edf3685e30d"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53075_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "69c401f8e32dbea1b488fb46dffd7d4a45d4aa7158532278ceb2c78e3d2796d8"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53077_tavg_land_6m_end10_2006_2020.csv",
+      "sha256": "da68626db7eafdecdc5b6e1d904e07c0b9d7d1033e2779b2119731a04a30b12f"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/04001_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "7e34e921b3db2fd80f1d9083ae362eb0eba526af32f22cf3d5ef17d15cb2c992"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/04003_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "8f293022bcc15427eb6b75e72938d2c0dfb2c2a4f519433d1ce9662c560c6b9b"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/04005_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "e7164a1656b09304afb182a55deac5dd726847acdc1a0627113f7d80598ff6d0"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/04007_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "a60a2c7d5919e5253e1ff44f99852a1ddb33cea533b5de138f56280525493ff6"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/04009_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "8161ca69f31a7128da19385107dd08be906f3752a405997a0973abaac4b9d770"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/04011_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "e40da995ce10876febb284973e765382c23e4bf8890a24ccbfc65c35d2dea716"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/04012_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "af8e2a680cdca9dab09d70ec913feb7f59718121bc8f59fc30fdea5640950ed5"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/04013_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "72d70ca441adfe3e453bbaa8d37455386f047b865250e1f62a5b29f2528073dd"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/04015_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "3d960f4edfa2bc7a48f16114cd520ae9a5c790f3f97c5299a71b0d2a2c94039a"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/04017_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "45037ce218c0f457c186bffaac3a371a7abe45f71d961a731abf3b92b161b8b5"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/04019_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "37577d7074848da187e20e46a58db48caabc6729af0f27d68058515433eef06c"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/04021_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "5711314b5a415925911a0f17611b7ddb3b21c6506087f4d4457b0342bc14fc6c"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/04023_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "c9566780c9d40de907a5b95ed01f46acff36f5d94f7952b83dddca0d25ca6242"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/04025_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "efdc45b19d17b5bc2cd3f99a806617de96ee8491cb14dcf3e67e4e80bf8e0761"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/04027_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "936a6edd7f05a14fa94c14eeb66a9551581ed14b3f08459ee08b4ac1d13c5f5e"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06001_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "a318920fd818bd81ec424be791c809b5262136937d7f474b5f7030fc273d5968"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06003_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "2b960208479e2d89846f7f5ed2f0a6739e3655bdfb3314ebd1046204a5187db6"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06005_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "6a40143c06f3c72c713e1ba3dd43e5a9da56ac08c26c263e40cb4dd62fee2232"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06007_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "73de850c38eda9294b09fd68850cd9d2bc3c0a1036e8fb2edbd9bf42da4cc7e9"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06009_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "c71a1a8081bbdabf69c744c4451271eaa9ce669307e5e9986353935cf609fef2"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06011_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "8373955c84b15efc1d137a7534a96aecda0087228f26d3849cb39c9b4434c4b8"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06013_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "bac81f772baeef2fcef86c0b94539eaf5dee87b9899d7b42dc2a45f9f9c3ce40"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06015_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "b1ee10c0583a41399d0c3990610d2efef9f7f194c07f25e00b4f1844d62eb11a"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06017_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "f5419a296c52778fde585b6c8373b0aff710cdc03a4beb7b91775446c2d2ff4f"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06019_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "b9d39b634d98512da1ad4c5ee86b38becb7f2c0ed2477dd7bdbf4eb5dfc062ad"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06021_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "b23159d5f0b9f7d105d36fd66c6ed846fe48865bb000e9e31c6b6a927b6c73e2"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06023_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "0739b9537da9ff111765f5e99b6300f0b43560e3f4bfb8dcc7d3ff13458d0f37"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06025_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "2311152904129d457c5ed21fac7f5d99384c0b0f9a82b0a6db04ce023400fec6"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06027_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "62f5e0d5af95147ebb88b92a39480576d25d1732b549063e10ba99ac0e031283"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06029_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "261dff42c0eb55762f383da4334552481917a1f0bc7efda5b492b77f4c86e055"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06031_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "7a81953807236659ed9c294c167ec062321013dfbce2c875211fa41285b829ef"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06033_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "8133c8462b0c70d603506bc5714292169f4c38d39b730e62c83f7bb117119575"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06035_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "61a16d0a3d1dddb88211f631bb3d5db3a5080821b48000f623addcfbcc680cc9"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06037_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "5754c88d9312a57c7fda1e2a3034ad1ac68c65733b6f79257f4d1caaa49178c9"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06039_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "68ff78cebedebfcc08b9672cf8b5dfd0a114c4a95e18a15a658f6a441f7ac20e"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06041_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "6bc7790c0c3e72b8d27b9dea46042e29b9dc9d26d1436d66d53cd2bb0a63472b"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06043_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "c16351e9748d3b0851165914d92b3b156f1c3255d0713149fb2c1b736f944b27"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06045_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "9838c0ff8de497a2a33c8205bb61b5cf2587867d27478da0ea6d11a10916f86d"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06047_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "39d794561faf6b48250cd5242640fa65fb75ad31d356de80eca069b272338eab"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06049_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "97b2d134267d234e8eca7533a41eed6c367b2dacdc7abe2a9e92d87e187c93a9"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06051_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "a5ae0dd7991635dca2dc3e6dd8bcbf341df67967cfb3912a564223a10995e79a"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06053_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "ef6bb3dc2e3893c08592c983b52ef0ef4130dfbe14c12be303ca0ee03e767a12"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06055_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "3bec909296a743749119917459ca1325ebc84b104accaaf4bb02398c7d86be48"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06057_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "3edb7a0c81d2d9ff5aedfa377362846c294b147d96ceeaf373ecb8cee004ea32"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06059_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "851d8be76bac2c73d644b43f84baa4ec74fff7dec5a774a2da43e3f704c3cf9f"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06061_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "2d20f0b20cb77eca03f3b9a5f9a4ede57206d31de096121958e92a5d339a3485"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06063_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "66d8ed3f3a2c1d2e1154ae701b8ddb2d76db95c84111dcb8a950f004b820a0b1"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06065_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "4572a2107e99d8a70746c1ed94f47172cb4cbed8ac2977872968f956605bbc77"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06067_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "66fdf39f83302453ab8c9c1b86abe482b7f9b8daae39cacd167b80379a004fdd"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06069_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "fed59bcb9a03fd22fda1fcdf1e5c5dc77dc320f9793e0cf63b7a5ed58479e576"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06071_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "8735709e14bf4d054abc8d694e840f7c3625d2cbeeb68cc9fca66f7a17662c42"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06073_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "495b77f95c6069704a49488ef188ecb064aa483f2a32358150c661afbd7669fd"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06075_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "fb13dd3914885c08efcf2b62b6fd5c2f26e7923016e7a53827c3d757c199bd72"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06077_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "d4848dac46c05a6082ea710189f07b1d5ee9d6558f5a5b8454f24c9ae7184bde"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06079_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "095ec016e699fb2a8e2f85bf0c8361b5da6dae4ad4cd73a385fb39eb32208de3"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06081_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "119cd132c0b253ce655b7b7d6fd28bdf5ee747d350d42a613cb6f6b3f0ec343e"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06083_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "4c1933b8f7905b995281297a16d3cafd5700e7fed1ac5742ba0ae5be98b8d450"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06085_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "d9ad7c4f6ad3133c8a494ecb456dff02d0dfd5d3aa13aa8dd5426d1c86b49883"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06087_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "05f03dbf09ee1d1fc04ff211549ddd100f57b2be0623afd1c26315022feddf8d"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06089_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "10d2ab78f5ba119a66ddcd63dee70d147bd725aa70740ba6488b3e1ec7ec5c00"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06091_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "38204022642c0db5c2d2bbb76a8099c3c72c78ea89de6eff8d468666a4caa106"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06093_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "131ac1e0f170a8259e89facde0e4db0adb86b57c843b4aa1dc6559409b6ba295"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06095_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "e6f22336cc6e93e3edef3c074e3feb0658d2445c709f1c5f6440bb43ee526b46"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06097_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "518889dfb98d09cbd5faa7d6ade04465832ce6a397e448d66d6985f47b2d24f7"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06099_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "bd6e687a613e223181f9d7a2dfaafbbceb972d3851fb6b6b6d8dfa1be3b566c5"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06101_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "1e8e6c0157b3e2f53183b6d9d1f306db7ce5a72d5e966885d7bc39b88eb8873c"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06103_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "689e9986b1c34221504753d8b046e3a750a0677b290b8b4a7d5fafe8cde7f627"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06105_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "b5a2d9112fcf4ca609f89c1735e0ba41afc3f74a35b453327dbf527672e63c4a"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06107_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "738f181eec9e765b3b863f66185b294b20010000d1506e721652fadb0bc3e10e"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06109_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "e5fa2bb504e771887a0b1498cdd531890031729ec19115404e88e064b182026a"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06111_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "f2f9d5de4876f8a05bc314a2747cf929ca491d51ab8fb45060bf458d8018fa49"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06113_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "dbb5804c5a9d5222b62eac9d88330bc5a046f65668b7bb905612102454dbed37"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/06115_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "7b3d1bfd823e6923c5e73923181814e3f0aed98bdc3a6acc71f113c87493e9f5"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08001_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "bd1094cd2025e2661e27bf77c336958bf76cae480064effc745451087a4d2f56"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08003_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "82ed322c28aeeee8c00838acfc1e0e52e400f47dae8174a23beed592a224eebf"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08005_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "16e2e9200bc7f801742bfb841a60ccf1638a09ee4b9605a1facbc8c57cb3fee8"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08007_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "81e033a9a7c7253a66d220f5c2cc9a3706cd739c3e7b026228ffd6c2f19c2897"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08009_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "bcf7c800c01391a6cc9bceacff9edf64f82c6b8d512ca3fa3172d21cae812e4f"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08011_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "3d420e3fa0943f96d8013eb428bed996bb00611ed7f9d6e5fc68b2ae15527bf3"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08013_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "de2ccca100e7d9a876fd8689b62be438ce3044a0c7b434d3590ff901dce3b93b"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08014_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "9d8f3666fbffa193283ae4be946345dbeb65c98001100068825b9b8699aca0bd"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08015_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "a26a69eb5edf0d647a6e0789e53cb740af13a8e35f17d5037c0eced106fe2d35"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08017_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "613ba78383f0fdcd22079c9ad434338b7b786f38a4698ef2528e45741d11caf5"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08019_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "419e54fb68fafadd76a93f195531bb1b7bb29792e369cf2ff948602c261594b6"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08021_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "7b642855202473e71cb4f53290957201cec01506034d8bc5a270e8f2054f1f1c"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08023_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "1ab813077cd8b06a22af3624b64865eb2041537ce0da8ca5b00605426bdd3c1e"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08025_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "60f4e940d19eeab2be8922c23ecf8e6bb9e137b48967d6600624611ff3a18f85"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08027_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "5c941ec620b72ab51c5a88837c40444a42e7e86d885c8dee47af9d031f6471db"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08029_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "f2f673649e981a81f1cadc3d7ec1ec8fdce404580984ec79db2e078d488d7360"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08031_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "f9624fa1897bf94e35d78af723ea18c782c7cc22b3c4dd59e59347d82481e066"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08033_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "e3dd17834d5a526ec40d71d2a4e2661e0cd1fd1173a119551839bc08c3e3e499"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08035_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "7700cf334176394d7696ea8dd20e21ff59401361d9b9c0561990a4cf27a6749f"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08037_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "f8ef98c3ed49e8dfb3b9455ada8f19a61cd82a7a73d2642cc7f21a8cdcc66e2b"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08039_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "815afedace5b5f3a3ffbfb27ef4c61bd354ceb785c19bec4661ec59abdb40aa3"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08041_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "79d212d2e49cf46941c532eb3e83315134433729df7faafb2cfd5c5f15199ae9"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08043_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "33114936b6a275ddbb7a0799a8bd4ce7cd46934d2fd5575df649839a84142c14"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08045_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "a235a5d7951723bcbc4afd66270210b07610667889e13b432c813521bcf3bb73"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08047_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "03b39e28e7a4f03c7babe501d9dce4d701651b98794c95b8f356d15cf6c96f8a"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08049_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "48b20e0831f22684da57eb1c80618fb836bd12e5201a25e62330c3922de4a203"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08051_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "b29c556fca89a5cd95ac581c55d9da66838985fbce321e8eeffb059eab8b5f2a"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08053_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "a192f7b4096847a2d2a5920f72ffa3ebee90a7be2ccfc8abe9f2f84a888fa3c5"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08055_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "0c62528e45f9add81d74c7675f326daf3e807a42c67afea8db1cba44e97d5e63"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08057_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "229fef36a147548190a781eb90eab5e340a5cce74b1742857e305cf2f52de1e6"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08059_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "4eeebdf568486647a520f39d291c3c316c30e915ee5d0eb628994c7ffbc0446f"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08061_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "1ef2d30d5c59bb0b3b06af9b22156ca68ad884d4945bd898483a6b0d69ab676f"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08063_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "09effe5c9919b18652a1453f03dcefddfa5daf4e627d42ce851ad90e1f3c3ce3"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08065_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "3f77d95a41545aa38dee6a95771b54de659d9f82459da658afdc8737abd21d22"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08067_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "f60a22b4e22b393dbdc7af7e566c839e4512604cb9d947bb6bfb2513c22f4a0b"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08069_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "6dbc863d76723bcd9dbf8fb260a727d2b5ea79cdcf8f888bb8afd4bc0e58ad54"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08071_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "882d582a6d3900c63aeaf4d8432d661d03e684f4e5846b9990a5545126fe287f"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08073_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "44f65c2a20e9e22622a47ed89727741041ffde47c308c2c0576a389c594bb292"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08075_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "d8066de82516a08f2701f433f2ead9516b7a698487102d2b8a8e6c7a4017049e"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08077_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "617f1f959183233235047bdd0ffd081d86f3bfaa8f84bdc34226cf4713ff1a8a"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08079_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "76ae024656b982a2425f60384fba94ddcb1ab267b18d559242f863b9b8863c7a"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08081_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "0611e6aecee371c5428086c9ef5b709058fef0bf61e412d59100a07ea1dbbef2"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08083_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "93c24c0f890ebdec94d37696da4252ec1071ffb0b7c3a5638d0956e96313ee7b"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08085_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "ee50d6ad8a0919b5ac8ada5616457ced913e4c1172ee4b283921e859ba504bd6"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08087_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "44be72c4284b3df1e22f0e16f4be80837af71fcbd4727e6034dbe71d73394b94"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08089_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "48670f4109839d603e79c3ba5befcc2f81ec36b30d819c8c46eeb121c7b214ea"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08091_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "56662a248a27d5c68a9be061f02ffeb88330514082993531afa0ebd1edfa04f6"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08093_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "9be1bd1a858ec7e01213d9484eea5a6b41329a88ae9b98d8bd4a8b4ec99caac4"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08095_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "8cc241195049372dcd83166769bac3b862fe04e6d02d882358c33a08a48da0aa"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08097_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "b6400b95709e9a8ed9891fc8b9c9ef17ef58060742dffa564899b6c44dcbd7d6"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08099_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "fe759d89a602cdd980ea832cac5363b1cb5d227d48ce485f8768b6deb8932c3f"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08101_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "6d28d8843ed4727e6f64cbfac7857bf5ef70e1cfa6115ac0fe9b024841b4c0cd"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08103_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "d16762f6526506326a469d42ea44468baa91e4e3c9bb3385413a201ed58b4871"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08105_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "284f9607b09a83496f064c65f6ab6de5de441c6c361bfba1024e623dd435d9de"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08107_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "3b4080be46295b24e825a283bebf35776f9913f646a359292f4443846523e7a2"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08109_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "5896a29120037fcab703ca38c91a129ab170ea32e409e4ae5660d14b27ab35bc"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08111_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "3312bccb8f54a1363c4e00142222c28b697a068df56a9ab836538f10980fa641"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08113_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "319a0d483c82a7d3c95d4bec954a4a7c46b9b7d1b40f8d93977a52dc7b96f019"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08115_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "cbe6161efbfd873017f26175a3d0edf52a06ddf2e899f049fffa1675efc7b3c5"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08117_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "9bb0b9d42a14ec617ee8fb30b620fbf584ffe58a5c6bd1861fa19b4c96f9946a"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08119_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "42fa9cbb23ed264acff75c0ef06285c5bb8d09ec293aa9f048e190f67e923254"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08121_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "0bee14bf10e2364ad7be6a12dea3d7bc74d758e604164a5ce256cd828a96cd36"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08123_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "725f14402c6512f863d62abf959321d5a92695d710e325175683c8bdbd8a6067"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/08125_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "aff7e15f79d53b40b157ce7f46d9d6e98aa66c7f3df5474db708a60e2bf8ef68"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16001_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "6c53c1563f9bb53cf50b201680a2e90fb784398c73f99cb26caf38333c5f852e"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16003_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "340a1770421fba2c54365de05bca2d76402ca2cbcb9fcdd814c1f9be10d23965"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16005_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "1e11b327f3fe1d839d3ea0deb657924148fac89a805d0dc233b91690f652b4b4"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16007_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "81e7cafab847e633b92aa6fc853cdc92d7d823419bc37fd790326dcb149895d5"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16009_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "db301ad8000f34c67db25f7da71b7c9001fb2c8580069fbeadce856c4b444fce"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16011_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "c70a4d804a4947d7eec19462312c616d95ca334bd2e51db85c42dc3dc9cc6db1"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16013_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "06fa84e3bb97975ba24e4416a0dd1445c6306a014b32783d7b5921e64e0f9945"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16015_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "fb30504bba813feb6c66ed902d63ed2a3b913305677bff4cdcc4185b286045b2"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16017_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "535ea6dcdb9c3206aaa7ee2eff1f29dee62aca087b9880b4efa6471ed913f9a1"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16019_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "6c6dca1a40b4c877ee63189e4597eaedd8649286ab359f372b8fcfb68f71c087"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16021_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "3e45dc2e77a9aa8f9b4130d1c1667df285db715c26a1fb489ce6ccfdac92d817"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16023_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "2824284d577948fa44d4747c4572d1affb743dbc6fccbcb499cd52b72b2d37e1"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16025_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "d76be4279e7bc22b3003e2cfb73e516c4a08777f3e0c772eeae1779c6514ed06"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16027_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "16cb632156880f9a01afaf5af8615baecb761b4d5246c19a3c53f2c54e4a843b"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16029_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "3d64b0599cc6cea7a6ebb9098e486cdab2c959a66a58d6f978be43844c492a9b"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16031_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "8dd9ae5bcbcc33e0e746822cf252f084a0090ed257a98b0ef905d3af227a597f"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16033_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "43e73ff65b24f1cf6a56056aa571899a45cd3e201eff0e50e0abea69e7716d12"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16035_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "5300da43c443320736bfdab0abb9f5d0ea8a8bcd74154b5b8623f81229c604a8"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16037_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "8352ac26eaef395050a6849d39cd458072abc60930ccdb1370a312cd02fccbd6"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16039_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "787b5036e7a956c2111d1d430298d32fe83edb14d2c1fdf52812859cd758c574"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16041_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "d7946d5e3667f0402114a3f83879eae52fcbff94015a4e3715ee84fd02f385ed"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16043_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "77efb4113fffd417efafc1a42c7b04e74c3cb741f9cb0d0982c9e34823e34fa6"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16045_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "30b7e98d42b06af42e63bd47d752bed97446ba0f29ab1b74e7647933cfc8ebd3"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16047_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "5b301209e363f71b15afb3c30bd80334baca8424220887f042d2689531214f88"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16049_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "e8b267738a0878ae5a00dbb3c0f8df2d8145aa123e094eab727c6b39fca7fbe7"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16051_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "b664883205cafe4d46db00066c843b0011258dbf4d557d95c60d36e3ceb88cf1"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16053_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "b889a9b82dfb6e176ea52f8551fd2d77c6baa37da069bad040cd3f352086b901"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16055_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "179dfffb3b6bb365e00d72a151cfec3e0451688c4ee1c8cbb2244f0a550dda9e"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16057_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "69d5bd16e244130e68487b55d44ab367a0234b761bc5284a20d4b23ecbc9dcf9"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16059_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "2662f01dbfe214332a3a724af57fa4247c39875847088caaa4f25360fa41ad1d"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16061_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "9e264df93bb9c553956510b37302403865afb8eac33d856076664461bac20d03"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16063_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "cf1b9b518c9ebac6de5b0b34d11b9794f96da375e4868219f87b02fd167e58a4"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16065_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "69a131bf886118b8d3fea7f2326f1d0ea92899d70f543ff3a338fc99d631629c"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16067_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "7cbe3f0cbf17f3fe50a2ea1569a05d55c1680c586dfad175146f7d54cde7c107"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16069_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "3b7a7f4e83a723ddd6b5e288f76db7d3437df310e6870c185bfa180c4812d9de"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16071_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "15e743260b01d991adf0d5c07b36dbff468d65ed82b48eb1f34d6693e329a67b"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16073_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "64e45e169fe8960159dd92dcb86c07e7ab819902b063d81bdaf60199c39c6ae1"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16075_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "a12fdf925a519f4e0464fa44d9af3b4149be72db0402701c6fb4adf0aa83fa66"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16077_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "3efc94cc6268d81c9dfb9b2b2b9fcf6a8bc49a2d5bb323c70503bf7f3327030f"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16079_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "ba350ef3cf6937fa0768ff2cb1d048f02aa95be7e6f1e3cd85a1c8573fb66adb"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16081_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "d35052fc4121d8503d127dd19823c85f5d4c0b3b140c3ee4e2eb540fc24ddc3a"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16083_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "736747192811361500ad49e0f9a001b035af84ce84a31e2b0f7700827c09eab4"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16085_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "0898f1a26119ddf7e523aae96354db9c3b76927623edb92175f59275e422982b"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/16087_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "eec5393f7cad001a1e4484f7ebd4a7da3500036fece4ed3964040001e6e1523a"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41001_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "71f9cd6d56314fcf0aa64854d1097c88985f666d3e0b89045dfcb2a43d6048ed"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41003_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "e2b89670c511288e9960e3239981734f981da8d785c39a278d64683185205377"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41005_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "af11c5e97395c1cd8485cc43ddff810eff385e861b9a22a5e5a68b08b727cf21"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41007_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "6bcd6102baf932f8340ef19bf367171c39b9eff6ba196bd7f76ac0c4b67ecc6c"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41009_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "b3f50c39445b5cf1e408d3e6fbf3b0b29fc1b9f83251536c5e2becab7b291c91"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41011_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "c40b8bd65d5909e7bf8a41756610135adeb7ec64142aa09252cda4856e2efe5e"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41013_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "37ee2fea681d9d6afecb664ed7997ef09bb6afe49a391cd987c4cbbf6ebb1344"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41015_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "9e89ec1d8130c6ce1a45e245a6a8881798ea07e44f99865b94f5649dd08b3f80"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41017_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "b661a38213db78d65ae959852585a89f19d9fa1d328feae8e14ed1c54b97b88e"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41019_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "83eee32d38986953f5fe1166cf4f3e0bd9adef2d2f1eb8fa783d754f9f0816f1"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41021_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "9777c2b5af4589b15ef2c1bf3acc3e7bade0307d2c938ae051b3da90e12e6ff1"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41023_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "f6448573cf7967cd522948a20f43e6ee6b642dd0a629072cb8adbf3e0f914090"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41025_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "bb27e9e5e420b5c2ce991f193003f736d6e6e52f71a19b9510098ebb34bc708c"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41027_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "6241ac8a17a63ecaae81a1e0de95e2973039763ee0f84483627be19bb8dd54e2"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41029_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "94785d3a733c78065d8ce3050355b2e414f702a1e6ae11011dd98b20da36e114"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41031_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "52543642b227212a1762e5b05846d278be3a328ab1d8a271f2e16a43813d8ced"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41033_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "23c11e3a6f483aa18a1b295c15ed65ea6876164223aa612bcf01fdabd3a588e3"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41035_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "f919c7906c690ddbb388258ac26cbf5ddda61ad0712ba4139415cf88d994ac42"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41037_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "f118a24814250ff9d1e73673e234a86f1f397a5956ee944add20ba5cdc62971f"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41039_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "3b18819be18d4e0d97fe614d269f2f18b4b4de2b3e0e684f2879d93b67f00c5c"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41041_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "51e136db9debf86772cf3395d319400dad646539d5dd602d4d2080970271bfa2"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41043_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "60b73493ec12d7b68a2554148cb57a2c461ca406ddac1ba8711c6f42b2641bd8"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41045_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "ec4b4b38a3fcfcecdc7c3977e215fbd8cee4b44820a5828c1b1bed118bb58e08"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41047_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "52936b939edd3fad4d2ad18a9d455b8436b2179e4827774fd789bdedac31036d"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41049_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "0a09225f99c1b6cf74dc4c68ad3b8b58fc48ea837c3aa6a656bafd9916e08012"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41051_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "5a01bbb683e86cb4163ea710e077f2595bf521919522dc51f2c26842addc0d58"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41053_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "148be5a2671b8f9ede54599941cdf4b061510cdc205df826d6ca2706bc01a14f"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41055_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "f7b419b85207f954c4294cfafefa8b8fea81736cad272864c362e46be40a68f1"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41057_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "dd2dbca4b7504fc7d9f7931d96469fda9d5e8ca9a1908db1b22956e0e29f0603"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41059_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "aa717d285839569c7ff4c51b913264b50f2e08debfb62649fa9b353cf3bf5728"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41061_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "6856953d158bc58b836e6075464bdb4f21a055e20106713fc27799535a0a2199"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41063_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "5978939a856722e3d21e5cddd3b91e303d8be4e0934de4f8d4c3666d171774ba"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41065_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "b5e3372acb649f1e380e4cffdb0c8a8e0c2e4ab0cf7a84ec3a6ffb80a963f5f6"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41067_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "5814831327a527a1943f68575b53f202b57d343d2daf4939b7f9844779fd9412"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41069_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "6c7d2499866a7f5c9440cf7b94659d5761eeba7e91c7cafea517c36e82835bd9"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/41071_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "e1b52f4cf89f0b4b8faf39e9547cff22104bb7d13e18356e9a813f51f06bebce"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53001_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "0949819dc880cfe4ef4759de824a9b71bef4965ae7718c659663cd4ade167f39"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53003_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "bcd0a49d3d66dd93cd0984828277454f17d74d3a46abc494e9344eebc156888d"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53005_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "cb203236256d514f2e96ccf39125775cc0c9554d9bbed05b30dbaafc671b226e"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53007_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "c8f75b9df6d0dc56424697ef27ccf3e4a0a8922c967f948c67e82ca6c6857c0a"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53009_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "64517d01e8a7b3f549bc4b9dca77dfeae27445e1a85cf060acad3b943ee628ba"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53011_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "ff20b0ec4c8befdcbc3e35aa5955c68906423448419420ff5e620306a397cdb5"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53013_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "5ed21a9cc18426b9c66206252fd2efffa07abab0dfbf602451841461d04471a4"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53015_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "2265d1930c2e1a8be0808d0fc615d9af9865c36e0c18fb7b35ef160b1c141537"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53017_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "7fd27654d65c4a7f876f3303a78fcc85608846ea354183b74ba49ca35d55a1bd"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53019_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "7e25d8806f1cc429b6ed22fa3faf0922839454931697c6017ca40796163ddbf2"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53021_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "2b5798f47aee0e30b8e9a9bc7754573228266833384960a1a5b4b7dffae2a3f3"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53023_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "9214de294d9b553408fcf2e0b90223f126c0df22de3832788ed5fd4966d2a875"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53025_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "86489d659f37b9ca24645f4edd984ca3a058ad88611a1395ebb33a322602a5e3"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53027_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "ddcd915d4895d0b2bb1602f1e5b4b6f3937354c36f81496d0a216ea6afa615f7"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53029_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "546866931bc35d03840551394dd5a2186300f23d764ddbb64e33835b41bb1f85"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53031_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "69c48fc9e27445c79d2741c8eeadf94ee4f6de2b42c709abf146c1da9c531b66"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53033_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "0e9ce6ec066510d0f30f723daaf1b7c1e35011843bdbd808a1e35aec17973b76"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53035_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "fad3a641348dbec8b8d1b1d697496dabdc4842afbd57f1a1a9177f92a05e1d0c"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53037_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "3c3c87b783df024db8d4589421af6eec0276a5d8668844e5872cc7095ecd796b"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53039_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "ab9b7e923fd5b5178ee920f8e1d9800fed93c2819a40ad4f2cb0e729ffb51be6"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53041_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "a95688fa94a2d7db85da2c46b35fe7ef28d63356ac75223bcdf4d82421baee8e"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53043_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "260ff799ab4302566b5ae1bdb77ee68c9339f945a9d6083b3f50386eafc610be"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53045_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "07172cd724da00d7553df26cd42dc7f127f1f13258aa9bd9a0e14dd4ce6cdfa4"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53047_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "15712463f9af0e5128c9a0bcbaff83ed08631fa43ebbc7d0cde79131f3012afd"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53049_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "93b925c3a0afa230a8aa6f1baf7cea2f73585f852336512576546678bc45a03e"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53051_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "a8d282a81a47efaad58ea938af8c077c497dc48698464d250d792f7aa72a9811"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53053_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "35d4794ef0c4960724041f2eb4715c168605ab79f56a23a810aa417a08bbce22"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53055_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "c3bfa784ac6b7b6337c42be6abdc1ef92deae91983ddd6e06c938523731dc4fc"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53057_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "f70f77067ec0483fd8f2c7aa4aa69a70981a1c98b1dcac7b1f75ead21501afdf"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53059_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "e8da5b4e0f70f1a8ac2ada277837c648b71893a5e18e48ac2b2ab6820b36ba7f"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53061_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "954e05e78c791b63a3abd54eb2e090e4bc2f966b03c1527a6cee6e7bfd46a244"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53063_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "18345875ccde0f3a9cb604301518ff519db2745ef0a6f22737e489767f9272ec"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53065_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "a7137205edff3bc5fb650b7b3a0dfb180d870062483b8868b1bd8df87da658be"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53067_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "71b75d8d985f60b9f0b222c0d1db948f8512a74b9e4eea4d04594e66e73adc2e"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53069_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "8ba4415f532da3dc7a5c21c58e4c13e28f50ba63f0079616f0b6c50a87ec3dc8"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53071_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "42cb97ccc8af412b512093b9672508dbade7f8b6c6835b4cb9ef4ba6f04e0795"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53073_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "3938294b38962892366ce93f284f105f2faf101a4d75312d8924efc001518d9e"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53075_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "71c80dc2e2793d384865015eb6c70035cb21ed2fca0f577b05a4048c32ed94af"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/noaa_cag_county/53077_pcp_land_6m_end10_2006_2020.csv",
+      "sha256": "88af868ad59312c928efc81b067191ef5d7cdb52f322e7d81c46de7852e0bc7b"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/cdc_pm25/pm25_county_daily_2009.csv",
+      "sha256": "7bfa9f5bb3f1b1f72be2c48823c35c24770ae237f1d976060a3852faa5b38a70"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/cdc_pm25/pm25_county_daily_2010.csv",
+      "sha256": "fa7d79d2c7cb701c838d5dc490139bc15b80942e57723c1dca78ea28eca8d52f"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/cdc_pm25/pm25_county_daily_2011.csv",
+      "sha256": "c2ee8fc77ad37f2760d91cc4cafee4fdafe0c0388038bf3076d4f162a3bb6940"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/cdc_pm25/pm25_county_daily_2012.csv",
+      "sha256": "a2118bd9acd32ea30e219348bd23a1af9461dc9c203e284a6172fea258e4673e"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/cdc_pm25/pm25_county_daily_2013.csv",
+      "sha256": "2ed92b26460a05fba4c5baa7854cc8f5cd12dfb1a8f010713efb20e389baf198"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/cdc_pm25/pm25_county_daily_2014.csv",
+      "sha256": "b6f5896c33f9073e2f6321c391c97784c84b1e99d212bf5c89ae078b6d8629e8"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/cdc_pm25/pm25_county_daily_2015.csv",
+      "sha256": "046d336f24ba2ac365446385b2c63d1af680da15399cd508a3acea687db084d0"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/cdc_pm25/pm25_county_daily_2016.csv",
+      "sha256": "7b0219603216cdb310d9dbe16aff4bf5b7663af11b3b32a9ec54e1054310326b"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/cdc_pm25/pm25_county_daily_2017.csv",
+      "sha256": "567ffbc15a1f5acd5155f4fa842d00435aceb65c85ab82ec087f8ef85e995b89"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/cdc_pm25/pm25_county_daily_2018.csv",
+      "sha256": "245e98070819aa9eba2a8dda2851dc8885e9231ddbe142dba7a415ac81665d9d"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/cdc_pm25/pm25_county_daily_2019.csv",
+      "sha256": "03fe4ae2916fd0e70004e83f98ff9a31abfe81650c99d8c484704fa1e9739038"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/cdc_pm25/pm25_county_daily_2020.csv",
+      "sha256": "0c4f4c9254ad2ef944e35076a616022918b7c5c44b9634196516eb3f7ce8c8ad"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/cdc_ozone/ozone_county_daily_2009.csv",
+      "sha256": "36a09f8064e9b7ccea9429345120d11a68c11058a4511b0ba088684327445274"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/cdc_ozone/ozone_county_daily_2010.csv",
+      "sha256": "2d7f04cd5a0e6a82f5c6fc458c36636d1a19cce52612dd6ec37def33ed8df434"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/cdc_ozone/ozone_county_daily_2011.csv",
+      "sha256": "a10ed9906b8db6dcd8894286f03e35738754f187c2b910d46a196318d082fb57"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/cdc_ozone/ozone_county_daily_2012.csv",
+      "sha256": "0e8510aca588416ae5e54f303654af442c2ff1aa58adcc4d2c424216e2cd11ff"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/cdc_ozone/ozone_county_daily_2013.csv",
+      "sha256": "a2f9206ca79e4711b64f1e8d5e4197bcf2fc340b3a0fe4f7f92973317358bab4"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/cdc_ozone/ozone_county_daily_2014.csv",
+      "sha256": "7dadc9c05db6f8adb29bdec0e16cd896e8191141625a37c44df79df3692115df"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/cdc_ozone/ozone_county_daily_2015.csv",
+      "sha256": "22c41d39503057e95742e55a404fa591646bf3325c77bad1dbb35456f3144ff0"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/cdc_ozone/ozone_county_daily_2016.csv",
+      "sha256": "c5b46a9d481ae86f7b9acb7df34693f4b21f5b5299cffe8e3567d596fe3a56e1"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/cdc_ozone/ozone_county_daily_2017.csv",
+      "sha256": "20d6c2d46b451251efcd8e4cfe3f60698047d517b666d59ab6ee67eccc416863"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/cdc_ozone/ozone_county_daily_2018.csv",
+      "sha256": "8db1e72576b50cc544c46027e5bfc73bf5a9c016a22914fbb230fafc0631a01c"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/cdc_ozone/ozone_county_daily_2019.csv",
+      "sha256": "99dc1fb4afac3603f4c30f7eda2383d1b6e87dd600f2fbfb320003b458678cfc"
+    },
+    {
+      "source_project_relative": "Afire/all/03/data_external/raw/cdc_ozone/ozone_county_daily_2020.csv",
+      "sha256": "1c48082f702f5b1418a12b0f4de3b17c4f8c151c30444ce050a3d025517aa305"
+    }
+  ],
+  "panel_sha256": "0dd566c8f9509eb9d4438f56149afc92bc142b92d27bd8aa936721a35d8ba4c5",
+  "no_model_refit": true
+}

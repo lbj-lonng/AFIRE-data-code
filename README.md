@@ -103,3 +103,11 @@ Daytime LST: MOD11A2.061, [doi:10.5067/MODIS/MOD11A2.061](https://doi.org/10.506
 Additional environmental, fire and geographic source identities are documented in the
 Supplementary Information and `data/Supplementary_References.bib`; unresolved versions
 are explicitly retained in the metadata.
+
+
+## Source documentation update
+
+Supplementary Table S2 source/version metadata were refined on 24 October 2026.
+See `metadata/source_documentation_update_20261024/README.txt` for the resolved
+ACS and NOAA records, numerical identity checks and remaining historical metadata gaps.
+The underlying numerical analysis is unchanged.
