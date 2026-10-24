@@ -1,0 +1,61 @@
+{
+  "scope": {
+    "study_start_year": 2009,
+    "study_end_year": 2020,
+    "study_years": 12,
+    "outcomes": [
+      "copd",
+      "chronic_lower_respiratory",
+      "respiratory_system",
+      "circulatory_system",
+      "ischemic_heart_disease"
+    ],
+    "labels": [
+      "COPD",
+      "CLRD",
+      "RESP",
+      "CIRC",
+      "IHD"
+    ],
+    "icd10": [
+      "J40-J44",
+      "J40-J47",
+      "J00-J98",
+      "I00-I99",
+      "I20-I25"
+    ],
+    "baseline_period": "2006-2010",
+    "smoke_iqr": 0.678107947271523,
+    "imputations": 30,
+    "imputation_version": "fixed_EB_B1_1_9",
+    "original_holm_family_size": 7,
+    "reporting_scope_change_only": true,
+    "refit_models": false,
+    "regenerate_imputations": false
+  },
+  "total_records": 15360,
+  "suppressed_records": 3328,
+  "public_zero_records": 325,
+  "suppressed_percent": 21.666666666666668,
+  "state_years": 588,
+  "county_years": 3072,
+  "state_death_groups": 360,
+  "bridge_pairs": 72,
+  "fire": {
+    "records": 81,
+    "assignments": 89,
+    "states": 13,
+    "six_assignments": 55,
+    "six_records": 53,
+    "multi_state_records": 8,
+    "duplicate_candidates": 28,
+    "duplicate_groups": 12
+  },
+  "health_rows": 135,
+  "conditional_rows": 25,
+  "conditional_negative": 15,
+  "conditional_positive": 0,
+  "conditional_cross_zero": 10,
+  "validation_cells": 2128,
+  "validation_groups": 298
+}

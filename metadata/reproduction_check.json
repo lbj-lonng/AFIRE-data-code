@@ -1,0 +1,50 @@
+{
+  "all_plot_entrypoints_completed": true,
+  "main_figures": 4,
+  "supplementary_figures": 10,
+  "new_model_fits": 0,
+  "new_allocations": 0,
+  "fresh_visual_signoff": false,
+  "stages": [
+    {
+      "script": "plot_figure_1.py",
+      "returncode": 0
+    },
+    {
+      "script": "plot_figure_2.py",
+      "returncode": 0
+    },
+    {
+      "script": "plot_figure_3.py",
+      "returncode": 0
+    },
+    {
+      "script": "plot_figure_4.py",
+      "returncode": 0
+    },
+    {
+      "script": "plot_supplement.py",
+      "returncode": 0
+    },
+    {
+      "script": "build_visual_extension.py",
+      "returncode": 0
+    }
+  ],
+  "output_pdf_hashes": {
+    "AFIRE_2009_2020_five_outcomes_20260915_194616/submission/figures/Figure_1.pdf": "953916b761d7cfe290ee0ba1ae81068841d63b2afef39e83d53d904404a61259",
+    "AFIRE_2009_2020_five_outcomes_20260915_194616/submission/figures/Figure_2.pdf": "f2044115261eec51caa5adfce86417e53ed048b7d1d18bbea90bcc71cdb03494",
+    "AFIRE_2009_2020_five_outcomes_20260915_194616/submission/figures/Figure_3.pdf": "78ece6f6467b9d315cbb64035b67943ba57b3af942712707f2a89033777a74a8",
+    "AFIRE_2009_2020_five_outcomes_20260915_194616/submission/figures/Figure_4.pdf": "f9fd501d3a109d16114656a0f5ef55cfc31401fd1472363eadf3f03d20d78d68",
+    "AFIRE_Supplement_integrated_20260916_230522/submission/figures/Supplementary_Figure_1.pdf": "19b3b7d914a80049cf7112f78e2e196bcabeb174d6151a5b808025a758f4f942",
+    "AFIRE_Supplement_integrated_20260916_230522/submission/figures/Supplementary_Figure_2.pdf": "f54fb8016ff99e1ccfde163a652c3e817e8fdc0d719736f87b35ff7a09e88eb5",
+    "AFIRE_Supplement_integrated_20260916_230522/submission/figures/Supplementary_Figure_3.pdf": "0aa272951f7a2b542e8dfb0668e886d17d8a8a988bd7a7410bf40a4316d1d424",
+    "AFIRE_Supplement_integrated_20260916_230522/submission/figures/Supplementary_Figure_4.pdf": "bf3b32f5bfe15ed7003c20ccf2a83eb1609e9f36949ef14800308155e4cd91d3",
+    "AFIRE_Supplement_integrated_20260916_230522/submission/figures/Supplementary_Figure_5.pdf": "820c6a8ed94da581ac605f0a16d104c30fc3737e20289a8f1ac071e5db0781b5",
+    "AFIRE_Supplement_integrated_20260916_230522/submission/figures/Supplementary_Figure_6.pdf": "aa5b6317196c6a13d8617249738e63621bbc57895aa3199dab679fae4b5677e3",
+    "AFIRE_Supplement_integrated_20260916_230522/submission/figures/Supplementary_Figure_7.pdf": "e994cfb83f0b90758196996342b44ed3cd81ee0548621d794f9036984d8709de",
+    "S8_S10/figures/Supplementary_Figure_10.pdf": "a5221105ea794b4116e9e24fade8cef79597e20f215471a75e1d3fc80574b4c6",
+    "S8_S10/figures/Supplementary_Figure_8.pdf": "05ce84a58310cb8fac1e629f95e009d9508183d7b21ffba64720bb89b0ae734c",
+    "S8_S10/figures/Supplementary_Figure_9.pdf": "a34c19cd7433adbb793d08c845e808fe22f083f6297f6b5b029f7cc2df58d4ad"
+  }
+}

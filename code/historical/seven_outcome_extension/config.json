@@ -1,0 +1,1495 @@
+{
+  "protocol_version": "7outcome_extension_v1",
+  "frozen_at": "2026-09-11T23:50:13+0800",
+  "project_root": "/home/yyy/zhou/Health/9.6",
+  "output_root": "/home/yyy/zhou/Health/9.6/outputs/AFIRE_7outcome_extension_20260911_234642_lTDb",
+  "outcomes": [
+    {
+      "outcome_id": "copd",
+      "outcome_name": "慢性阻塞性肺疾病",
+      "icd10": "J40-J44"
+    },
+    {
+      "outcome_id": "chronic_lower_respiratory",
+      "outcome_name": "慢性下呼吸道疾病",
+      "icd10": "J40-J47"
+    },
+    {
+      "outcome_id": "respiratory_system",
+      "outcome_name": "呼吸系统疾病",
+      "icd10": "J00-J98"
+    },
+    {
+      "outcome_id": "circulatory_system",
+      "outcome_name": "循环系统疾病",
+      "icd10": "I00-I99"
+    },
+    {
+      "outcome_id": "ischemic_heart_disease",
+      "outcome_name": "缺血性心脏病",
+      "icd10": "I20-I25"
+    },
+    {
+      "outcome_id": "asthma",
+      "outcome_name": "哮喘",
+      "icd10": "J45-J46"
+    },
+    {
+      "outcome_id": "cerebrovascular_disease",
+      "outcome_name": "脑血管疾病",
+      "icd10": "I60-I69"
+    }
+  ],
+  "years": [
+    2009,
+    2020
+  ],
+  "formulas": {
+    "M0": "pm25_iqr + pm25_iqr:ses_baseline_std + C(county_model) + C(year_model)",
+    "M1": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + C(county_model) + C(year_model)",
+    "M2": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+    "M2P": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + precipitation_fs_std_extension + C(county_model) + C(year_model)",
+    "M3": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model)",
+    "M3L": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + day_LST_per10 + C(county_model) + C(year_model)",
+    "M3P_joint": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + precipitation_fs_std_extension + C(county_model) + C(year_model)",
+    "M3PL_joint": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + precipitation_fs_std_extension + day_LST_per10 + C(county_model) + C(year_model)"
+  },
+  "imputations": 30,
+  "imputation_version": "fixed_EB_B1_1_9",
+  "seed_map": {
+    "asthma": 202609064,
+    "cerebrovascular_disease": 202609067,
+    "chronic_lower_respiratory": 202609063,
+    "circulatory_system": 202609065,
+    "copd": 202609061,
+    "ischemic_heart_disease": 202609066,
+    "respiratory_system": 202609062
+  },
+  "smoke_iqr": 0.678107947271523,
+  "ses": "existing fixed baseline disadvantage, positive=higher disadvantage; no restandardization",
+  "workers": 2,
+  "threads": 1,
+  "main_family": "seven reference interaction two-sided P values; Holm family size fixed at seven",
+  "marginal_SES": [
+    -2,
+    -1,
+    0,
+    1,
+    2
+  ],
+  "tolerance": {
+    "beta_abs": 1e-08,
+    "variance_abs": 1e-10,
+    "counts_abs": 0
+  },
+  "fit_rules": "original NB maxiter=200 tol=1e-8; retry maxiter=500 tol=1e-7 exactly as existing B1; no additional relaxation; 30/30 mandatory",
+  "pooling": "original Rubin t df=(m-1)(1+1/r)^2; no Barnard-Rubin df; county sandwich G/(G-1)*(N-1)/(N-K)",
+  "alpha": "per outcome per model Poisson on mean imputed counts, moment alpha clipped [0.001,2], then fixed for 30 NB fits",
+  "jobs": [
+    {
+      "outcome_id": "copd",
+      "outcome_name": "慢性阻塞性肺疾病",
+      "analysis_block": "A",
+      "model_id": "reference",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "reference",
+      "task_id": "copd__A__reference"
+    },
+    {
+      "outcome_id": "copd",
+      "outcome_name": "慢性阻塞性肺疾病",
+      "analysis_block": "C",
+      "model_id": "M0",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "copd__C__M0"
+    },
+    {
+      "outcome_id": "copd",
+      "outcome_name": "慢性阻塞性肺疾病",
+      "analysis_block": "C",
+      "model_id": "M1",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "copd__C__M1"
+    },
+    {
+      "outcome_id": "copd",
+      "outcome_name": "慢性阻塞性肺疾病",
+      "analysis_block": "C",
+      "model_id": "M2",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "copd__C__M2"
+    },
+    {
+      "outcome_id": "copd",
+      "outcome_name": "慢性阻塞性肺疾病",
+      "analysis_block": "C",
+      "model_id": "M2P",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + precipitation_fs_std_extension + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "copd__C__M2P"
+    },
+    {
+      "outcome_id": "copd",
+      "outcome_name": "慢性阻塞性肺疾病",
+      "analysis_block": "C",
+      "model_id": "M3",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "copd__C__M3"
+    },
+    {
+      "outcome_id": "copd",
+      "outcome_name": "慢性阻塞性肺疾病",
+      "analysis_block": "C",
+      "model_id": "M3L",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + day_LST_per10 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "copd__C__M3L"
+    },
+    {
+      "outcome_id": "copd",
+      "outcome_name": "慢性阻塞性肺疾病",
+      "analysis_block": "C",
+      "model_id": "M3P_joint",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + precipitation_fs_std_extension + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "copd__C__M3P_joint"
+    },
+    {
+      "outcome_id": "copd",
+      "outcome_name": "慢性阻塞性肺疾病",
+      "analysis_block": "C",
+      "model_id": "M3PL_joint",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + precipitation_fs_std_extension + day_LST_per10 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "copd__C__M3PL_joint"
+    },
+    {
+      "outcome_id": "copd",
+      "outcome_name": "慢性阻塞性肺疾病",
+      "analysis_block": "D",
+      "model_id": "full",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "full",
+      "task_id": "copd__D__full"
+    },
+    {
+      "outcome_id": "copd",
+      "outcome_name": "慢性阻塞性肺疾病",
+      "analysis_block": "D",
+      "model_id": "drop2020",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "drop2020",
+      "task_id": "copd__D__drop2020"
+    },
+    {
+      "outcome_id": "copd",
+      "outcome_name": "慢性阻塞性肺疾病",
+      "analysis_block": "D",
+      "model_id": "dropCA",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "dropCA",
+      "task_id": "copd__D__dropCA"
+    },
+    {
+      "outcome_id": "copd",
+      "outcome_name": "慢性阻塞性肺疾病",
+      "analysis_block": "D",
+      "model_id": "dropCA_and2020",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "dropCA_and2020",
+      "task_id": "copd__D__dropCA_and2020"
+    },
+    {
+      "outcome_id": "copd",
+      "outcome_name": "慢性阻塞性肺疾病",
+      "analysis_block": "D",
+      "model_id": "dropCA2020only",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "dropCA2020only",
+      "task_id": "copd__D__dropCA2020only"
+    },
+    {
+      "outcome_id": "copd",
+      "outcome_name": "慢性阻塞性肺疾病",
+      "analysis_block": "E",
+      "model_id": "M2_relaxed_noLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "relaxed",
+      "task_id": "copd__E__M2_relaxed_noLST"
+    },
+    {
+      "outcome_id": "copd",
+      "outcome_name": "慢性阻塞性肺疾病",
+      "analysis_block": "E",
+      "model_id": "M2_relaxed_withLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model) + day_LST_per10",
+      "mode": "relaxed",
+      "task_id": "copd__E__M2_relaxed_withLST"
+    },
+    {
+      "outcome_id": "copd",
+      "outcome_name": "慢性阻塞性肺疾病",
+      "analysis_block": "E",
+      "model_id": "M2_strict_noLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "strict",
+      "task_id": "copd__E__M2_strict_noLST"
+    },
+    {
+      "outcome_id": "copd",
+      "outcome_name": "慢性阻塞性肺疾病",
+      "analysis_block": "E",
+      "model_id": "M2_strict_withLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model) + day_LST_per10",
+      "mode": "strict",
+      "task_id": "copd__E__M2_strict_withLST"
+    },
+    {
+      "outcome_id": "copd",
+      "outcome_name": "慢性阻塞性肺疾病",
+      "analysis_block": "E",
+      "model_id": "M3_relaxed_noLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model)",
+      "mode": "relaxed",
+      "task_id": "copd__E__M3_relaxed_noLST"
+    },
+    {
+      "outcome_id": "copd",
+      "outcome_name": "慢性阻塞性肺疾病",
+      "analysis_block": "E",
+      "model_id": "M3_relaxed_withLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model) + day_LST_per10",
+      "mode": "relaxed",
+      "task_id": "copd__E__M3_relaxed_withLST"
+    },
+    {
+      "outcome_id": "copd",
+      "outcome_name": "慢性阻塞性肺疾病",
+      "analysis_block": "E",
+      "model_id": "M3_strict_noLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model)",
+      "mode": "strict",
+      "task_id": "copd__E__M3_strict_noLST"
+    },
+    {
+      "outcome_id": "copd",
+      "outcome_name": "慢性阻塞性肺疾病",
+      "analysis_block": "E",
+      "model_id": "M3_strict_withLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model) + day_LST_per10",
+      "mode": "strict",
+      "task_id": "copd__E__M3_strict_withLST"
+    },
+    {
+      "outcome_id": "chronic_lower_respiratory",
+      "outcome_name": "慢性下呼吸道疾病",
+      "analysis_block": "A",
+      "model_id": "reference",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "reference",
+      "task_id": "chronic_lower_respiratory__A__reference"
+    },
+    {
+      "outcome_id": "chronic_lower_respiratory",
+      "outcome_name": "慢性下呼吸道疾病",
+      "analysis_block": "C",
+      "model_id": "M0",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "chronic_lower_respiratory__C__M0"
+    },
+    {
+      "outcome_id": "chronic_lower_respiratory",
+      "outcome_name": "慢性下呼吸道疾病",
+      "analysis_block": "C",
+      "model_id": "M1",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "chronic_lower_respiratory__C__M1"
+    },
+    {
+      "outcome_id": "chronic_lower_respiratory",
+      "outcome_name": "慢性下呼吸道疾病",
+      "analysis_block": "C",
+      "model_id": "M2",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "chronic_lower_respiratory__C__M2"
+    },
+    {
+      "outcome_id": "chronic_lower_respiratory",
+      "outcome_name": "慢性下呼吸道疾病",
+      "analysis_block": "C",
+      "model_id": "M2P",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + precipitation_fs_std_extension + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "chronic_lower_respiratory__C__M2P"
+    },
+    {
+      "outcome_id": "chronic_lower_respiratory",
+      "outcome_name": "慢性下呼吸道疾病",
+      "analysis_block": "C",
+      "model_id": "M3",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "chronic_lower_respiratory__C__M3"
+    },
+    {
+      "outcome_id": "chronic_lower_respiratory",
+      "outcome_name": "慢性下呼吸道疾病",
+      "analysis_block": "C",
+      "model_id": "M3L",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + day_LST_per10 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "chronic_lower_respiratory__C__M3L"
+    },
+    {
+      "outcome_id": "chronic_lower_respiratory",
+      "outcome_name": "慢性下呼吸道疾病",
+      "analysis_block": "C",
+      "model_id": "M3P_joint",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + precipitation_fs_std_extension + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "chronic_lower_respiratory__C__M3P_joint"
+    },
+    {
+      "outcome_id": "chronic_lower_respiratory",
+      "outcome_name": "慢性下呼吸道疾病",
+      "analysis_block": "C",
+      "model_id": "M3PL_joint",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + precipitation_fs_std_extension + day_LST_per10 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "chronic_lower_respiratory__C__M3PL_joint"
+    },
+    {
+      "outcome_id": "chronic_lower_respiratory",
+      "outcome_name": "慢性下呼吸道疾病",
+      "analysis_block": "D",
+      "model_id": "full",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "full",
+      "task_id": "chronic_lower_respiratory__D__full"
+    },
+    {
+      "outcome_id": "chronic_lower_respiratory",
+      "outcome_name": "慢性下呼吸道疾病",
+      "analysis_block": "D",
+      "model_id": "drop2020",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "drop2020",
+      "task_id": "chronic_lower_respiratory__D__drop2020"
+    },
+    {
+      "outcome_id": "chronic_lower_respiratory",
+      "outcome_name": "慢性下呼吸道疾病",
+      "analysis_block": "D",
+      "model_id": "dropCA",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "dropCA",
+      "task_id": "chronic_lower_respiratory__D__dropCA"
+    },
+    {
+      "outcome_id": "chronic_lower_respiratory",
+      "outcome_name": "慢性下呼吸道疾病",
+      "analysis_block": "D",
+      "model_id": "dropCA_and2020",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "dropCA_and2020",
+      "task_id": "chronic_lower_respiratory__D__dropCA_and2020"
+    },
+    {
+      "outcome_id": "chronic_lower_respiratory",
+      "outcome_name": "慢性下呼吸道疾病",
+      "analysis_block": "D",
+      "model_id": "dropCA2020only",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "dropCA2020only",
+      "task_id": "chronic_lower_respiratory__D__dropCA2020only"
+    },
+    {
+      "outcome_id": "chronic_lower_respiratory",
+      "outcome_name": "慢性下呼吸道疾病",
+      "analysis_block": "E",
+      "model_id": "M2_relaxed_noLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "relaxed",
+      "task_id": "chronic_lower_respiratory__E__M2_relaxed_noLST"
+    },
+    {
+      "outcome_id": "chronic_lower_respiratory",
+      "outcome_name": "慢性下呼吸道疾病",
+      "analysis_block": "E",
+      "model_id": "M2_relaxed_withLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model) + day_LST_per10",
+      "mode": "relaxed",
+      "task_id": "chronic_lower_respiratory__E__M2_relaxed_withLST"
+    },
+    {
+      "outcome_id": "chronic_lower_respiratory",
+      "outcome_name": "慢性下呼吸道疾病",
+      "analysis_block": "E",
+      "model_id": "M2_strict_noLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "strict",
+      "task_id": "chronic_lower_respiratory__E__M2_strict_noLST"
+    },
+    {
+      "outcome_id": "chronic_lower_respiratory",
+      "outcome_name": "慢性下呼吸道疾病",
+      "analysis_block": "E",
+      "model_id": "M2_strict_withLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model) + day_LST_per10",
+      "mode": "strict",
+      "task_id": "chronic_lower_respiratory__E__M2_strict_withLST"
+    },
+    {
+      "outcome_id": "chronic_lower_respiratory",
+      "outcome_name": "慢性下呼吸道疾病",
+      "analysis_block": "E",
+      "model_id": "M3_relaxed_noLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model)",
+      "mode": "relaxed",
+      "task_id": "chronic_lower_respiratory__E__M3_relaxed_noLST"
+    },
+    {
+      "outcome_id": "chronic_lower_respiratory",
+      "outcome_name": "慢性下呼吸道疾病",
+      "analysis_block": "E",
+      "model_id": "M3_relaxed_withLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model) + day_LST_per10",
+      "mode": "relaxed",
+      "task_id": "chronic_lower_respiratory__E__M3_relaxed_withLST"
+    },
+    {
+      "outcome_id": "chronic_lower_respiratory",
+      "outcome_name": "慢性下呼吸道疾病",
+      "analysis_block": "E",
+      "model_id": "M3_strict_noLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model)",
+      "mode": "strict",
+      "task_id": "chronic_lower_respiratory__E__M3_strict_noLST"
+    },
+    {
+      "outcome_id": "chronic_lower_respiratory",
+      "outcome_name": "慢性下呼吸道疾病",
+      "analysis_block": "E",
+      "model_id": "M3_strict_withLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model) + day_LST_per10",
+      "mode": "strict",
+      "task_id": "chronic_lower_respiratory__E__M3_strict_withLST"
+    },
+    {
+      "outcome_id": "respiratory_system",
+      "outcome_name": "呼吸系统疾病",
+      "analysis_block": "A",
+      "model_id": "reference",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "reference",
+      "task_id": "respiratory_system__A__reference"
+    },
+    {
+      "outcome_id": "respiratory_system",
+      "outcome_name": "呼吸系统疾病",
+      "analysis_block": "C",
+      "model_id": "M0",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "respiratory_system__C__M0"
+    },
+    {
+      "outcome_id": "respiratory_system",
+      "outcome_name": "呼吸系统疾病",
+      "analysis_block": "C",
+      "model_id": "M1",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "respiratory_system__C__M1"
+    },
+    {
+      "outcome_id": "respiratory_system",
+      "outcome_name": "呼吸系统疾病",
+      "analysis_block": "C",
+      "model_id": "M2",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "respiratory_system__C__M2"
+    },
+    {
+      "outcome_id": "respiratory_system",
+      "outcome_name": "呼吸系统疾病",
+      "analysis_block": "C",
+      "model_id": "M2P",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + precipitation_fs_std_extension + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "respiratory_system__C__M2P"
+    },
+    {
+      "outcome_id": "respiratory_system",
+      "outcome_name": "呼吸系统疾病",
+      "analysis_block": "C",
+      "model_id": "M3",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "respiratory_system__C__M3"
+    },
+    {
+      "outcome_id": "respiratory_system",
+      "outcome_name": "呼吸系统疾病",
+      "analysis_block": "C",
+      "model_id": "M3L",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + day_LST_per10 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "respiratory_system__C__M3L"
+    },
+    {
+      "outcome_id": "respiratory_system",
+      "outcome_name": "呼吸系统疾病",
+      "analysis_block": "C",
+      "model_id": "M3P_joint",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + precipitation_fs_std_extension + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "respiratory_system__C__M3P_joint"
+    },
+    {
+      "outcome_id": "respiratory_system",
+      "outcome_name": "呼吸系统疾病",
+      "analysis_block": "C",
+      "model_id": "M3PL_joint",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + precipitation_fs_std_extension + day_LST_per10 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "respiratory_system__C__M3PL_joint"
+    },
+    {
+      "outcome_id": "respiratory_system",
+      "outcome_name": "呼吸系统疾病",
+      "analysis_block": "D",
+      "model_id": "full",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "full",
+      "task_id": "respiratory_system__D__full"
+    },
+    {
+      "outcome_id": "respiratory_system",
+      "outcome_name": "呼吸系统疾病",
+      "analysis_block": "D",
+      "model_id": "drop2020",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "drop2020",
+      "task_id": "respiratory_system__D__drop2020"
+    },
+    {
+      "outcome_id": "respiratory_system",
+      "outcome_name": "呼吸系统疾病",
+      "analysis_block": "D",
+      "model_id": "dropCA",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "dropCA",
+      "task_id": "respiratory_system__D__dropCA"
+    },
+    {
+      "outcome_id": "respiratory_system",
+      "outcome_name": "呼吸系统疾病",
+      "analysis_block": "D",
+      "model_id": "dropCA_and2020",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "dropCA_and2020",
+      "task_id": "respiratory_system__D__dropCA_and2020"
+    },
+    {
+      "outcome_id": "respiratory_system",
+      "outcome_name": "呼吸系统疾病",
+      "analysis_block": "D",
+      "model_id": "dropCA2020only",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "dropCA2020only",
+      "task_id": "respiratory_system__D__dropCA2020only"
+    },
+    {
+      "outcome_id": "respiratory_system",
+      "outcome_name": "呼吸系统疾病",
+      "analysis_block": "E",
+      "model_id": "M2_relaxed_noLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "relaxed",
+      "task_id": "respiratory_system__E__M2_relaxed_noLST"
+    },
+    {
+      "outcome_id": "respiratory_system",
+      "outcome_name": "呼吸系统疾病",
+      "analysis_block": "E",
+      "model_id": "M2_relaxed_withLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model) + day_LST_per10",
+      "mode": "relaxed",
+      "task_id": "respiratory_system__E__M2_relaxed_withLST"
+    },
+    {
+      "outcome_id": "respiratory_system",
+      "outcome_name": "呼吸系统疾病",
+      "analysis_block": "E",
+      "model_id": "M2_strict_noLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "strict",
+      "task_id": "respiratory_system__E__M2_strict_noLST"
+    },
+    {
+      "outcome_id": "respiratory_system",
+      "outcome_name": "呼吸系统疾病",
+      "analysis_block": "E",
+      "model_id": "M2_strict_withLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model) + day_LST_per10",
+      "mode": "strict",
+      "task_id": "respiratory_system__E__M2_strict_withLST"
+    },
+    {
+      "outcome_id": "respiratory_system",
+      "outcome_name": "呼吸系统疾病",
+      "analysis_block": "E",
+      "model_id": "M3_relaxed_noLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model)",
+      "mode": "relaxed",
+      "task_id": "respiratory_system__E__M3_relaxed_noLST"
+    },
+    {
+      "outcome_id": "respiratory_system",
+      "outcome_name": "呼吸系统疾病",
+      "analysis_block": "E",
+      "model_id": "M3_relaxed_withLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model) + day_LST_per10",
+      "mode": "relaxed",
+      "task_id": "respiratory_system__E__M3_relaxed_withLST"
+    },
+    {
+      "outcome_id": "respiratory_system",
+      "outcome_name": "呼吸系统疾病",
+      "analysis_block": "E",
+      "model_id": "M3_strict_noLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model)",
+      "mode": "strict",
+      "task_id": "respiratory_system__E__M3_strict_noLST"
+    },
+    {
+      "outcome_id": "respiratory_system",
+      "outcome_name": "呼吸系统疾病",
+      "analysis_block": "E",
+      "model_id": "M3_strict_withLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model) + day_LST_per10",
+      "mode": "strict",
+      "task_id": "respiratory_system__E__M3_strict_withLST"
+    },
+    {
+      "outcome_id": "circulatory_system",
+      "outcome_name": "循环系统疾病",
+      "analysis_block": "A",
+      "model_id": "reference",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "reference",
+      "task_id": "circulatory_system__A__reference"
+    },
+    {
+      "outcome_id": "circulatory_system",
+      "outcome_name": "循环系统疾病",
+      "analysis_block": "C",
+      "model_id": "M0",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "circulatory_system__C__M0"
+    },
+    {
+      "outcome_id": "circulatory_system",
+      "outcome_name": "循环系统疾病",
+      "analysis_block": "C",
+      "model_id": "M1",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "circulatory_system__C__M1"
+    },
+    {
+      "outcome_id": "circulatory_system",
+      "outcome_name": "循环系统疾病",
+      "analysis_block": "C",
+      "model_id": "M2",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "circulatory_system__C__M2"
+    },
+    {
+      "outcome_id": "circulatory_system",
+      "outcome_name": "循环系统疾病",
+      "analysis_block": "C",
+      "model_id": "M2P",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + precipitation_fs_std_extension + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "circulatory_system__C__M2P"
+    },
+    {
+      "outcome_id": "circulatory_system",
+      "outcome_name": "循环系统疾病",
+      "analysis_block": "C",
+      "model_id": "M3",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "circulatory_system__C__M3"
+    },
+    {
+      "outcome_id": "circulatory_system",
+      "outcome_name": "循环系统疾病",
+      "analysis_block": "C",
+      "model_id": "M3L",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + day_LST_per10 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "circulatory_system__C__M3L"
+    },
+    {
+      "outcome_id": "circulatory_system",
+      "outcome_name": "循环系统疾病",
+      "analysis_block": "C",
+      "model_id": "M3P_joint",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + precipitation_fs_std_extension + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "circulatory_system__C__M3P_joint"
+    },
+    {
+      "outcome_id": "circulatory_system",
+      "outcome_name": "循环系统疾病",
+      "analysis_block": "C",
+      "model_id": "M3PL_joint",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + precipitation_fs_std_extension + day_LST_per10 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "circulatory_system__C__M3PL_joint"
+    },
+    {
+      "outcome_id": "circulatory_system",
+      "outcome_name": "循环系统疾病",
+      "analysis_block": "D",
+      "model_id": "full",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "full",
+      "task_id": "circulatory_system__D__full"
+    },
+    {
+      "outcome_id": "circulatory_system",
+      "outcome_name": "循环系统疾病",
+      "analysis_block": "D",
+      "model_id": "drop2020",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "drop2020",
+      "task_id": "circulatory_system__D__drop2020"
+    },
+    {
+      "outcome_id": "circulatory_system",
+      "outcome_name": "循环系统疾病",
+      "analysis_block": "D",
+      "model_id": "dropCA",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "dropCA",
+      "task_id": "circulatory_system__D__dropCA"
+    },
+    {
+      "outcome_id": "circulatory_system",
+      "outcome_name": "循环系统疾病",
+      "analysis_block": "D",
+      "model_id": "dropCA_and2020",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "dropCA_and2020",
+      "task_id": "circulatory_system__D__dropCA_and2020"
+    },
+    {
+      "outcome_id": "circulatory_system",
+      "outcome_name": "循环系统疾病",
+      "analysis_block": "D",
+      "model_id": "dropCA2020only",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "dropCA2020only",
+      "task_id": "circulatory_system__D__dropCA2020only"
+    },
+    {
+      "outcome_id": "circulatory_system",
+      "outcome_name": "循环系统疾病",
+      "analysis_block": "E",
+      "model_id": "M2_relaxed_noLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "relaxed",
+      "task_id": "circulatory_system__E__M2_relaxed_noLST"
+    },
+    {
+      "outcome_id": "circulatory_system",
+      "outcome_name": "循环系统疾病",
+      "analysis_block": "E",
+      "model_id": "M2_relaxed_withLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model) + day_LST_per10",
+      "mode": "relaxed",
+      "task_id": "circulatory_system__E__M2_relaxed_withLST"
+    },
+    {
+      "outcome_id": "circulatory_system",
+      "outcome_name": "循环系统疾病",
+      "analysis_block": "E",
+      "model_id": "M2_strict_noLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "strict",
+      "task_id": "circulatory_system__E__M2_strict_noLST"
+    },
+    {
+      "outcome_id": "circulatory_system",
+      "outcome_name": "循环系统疾病",
+      "analysis_block": "E",
+      "model_id": "M2_strict_withLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model) + day_LST_per10",
+      "mode": "strict",
+      "task_id": "circulatory_system__E__M2_strict_withLST"
+    },
+    {
+      "outcome_id": "circulatory_system",
+      "outcome_name": "循环系统疾病",
+      "analysis_block": "E",
+      "model_id": "M3_relaxed_noLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model)",
+      "mode": "relaxed",
+      "task_id": "circulatory_system__E__M3_relaxed_noLST"
+    },
+    {
+      "outcome_id": "circulatory_system",
+      "outcome_name": "循环系统疾病",
+      "analysis_block": "E",
+      "model_id": "M3_relaxed_withLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model) + day_LST_per10",
+      "mode": "relaxed",
+      "task_id": "circulatory_system__E__M3_relaxed_withLST"
+    },
+    {
+      "outcome_id": "circulatory_system",
+      "outcome_name": "循环系统疾病",
+      "analysis_block": "E",
+      "model_id": "M3_strict_noLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model)",
+      "mode": "strict",
+      "task_id": "circulatory_system__E__M3_strict_noLST"
+    },
+    {
+      "outcome_id": "circulatory_system",
+      "outcome_name": "循环系统疾病",
+      "analysis_block": "E",
+      "model_id": "M3_strict_withLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model) + day_LST_per10",
+      "mode": "strict",
+      "task_id": "circulatory_system__E__M3_strict_withLST"
+    },
+    {
+      "outcome_id": "ischemic_heart_disease",
+      "outcome_name": "缺血性心脏病",
+      "analysis_block": "A",
+      "model_id": "reference",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "reference",
+      "task_id": "ischemic_heart_disease__A__reference"
+    },
+    {
+      "outcome_id": "ischemic_heart_disease",
+      "outcome_name": "缺血性心脏病",
+      "analysis_block": "C",
+      "model_id": "M0",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "ischemic_heart_disease__C__M0"
+    },
+    {
+      "outcome_id": "ischemic_heart_disease",
+      "outcome_name": "缺血性心脏病",
+      "analysis_block": "C",
+      "model_id": "M1",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "ischemic_heart_disease__C__M1"
+    },
+    {
+      "outcome_id": "ischemic_heart_disease",
+      "outcome_name": "缺血性心脏病",
+      "analysis_block": "C",
+      "model_id": "M2",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "ischemic_heart_disease__C__M2"
+    },
+    {
+      "outcome_id": "ischemic_heart_disease",
+      "outcome_name": "缺血性心脏病",
+      "analysis_block": "C",
+      "model_id": "M2P",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + precipitation_fs_std_extension + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "ischemic_heart_disease__C__M2P"
+    },
+    {
+      "outcome_id": "ischemic_heart_disease",
+      "outcome_name": "缺血性心脏病",
+      "analysis_block": "C",
+      "model_id": "M3",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "ischemic_heart_disease__C__M3"
+    },
+    {
+      "outcome_id": "ischemic_heart_disease",
+      "outcome_name": "缺血性心脏病",
+      "analysis_block": "C",
+      "model_id": "M3L",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + day_LST_per10 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "ischemic_heart_disease__C__M3L"
+    },
+    {
+      "outcome_id": "ischemic_heart_disease",
+      "outcome_name": "缺血性心脏病",
+      "analysis_block": "C",
+      "model_id": "M3P_joint",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + precipitation_fs_std_extension + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "ischemic_heart_disease__C__M3P_joint"
+    },
+    {
+      "outcome_id": "ischemic_heart_disease",
+      "outcome_name": "缺血性心脏病",
+      "analysis_block": "C",
+      "model_id": "M3PL_joint",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + precipitation_fs_std_extension + day_LST_per10 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "ischemic_heart_disease__C__M3PL_joint"
+    },
+    {
+      "outcome_id": "ischemic_heart_disease",
+      "outcome_name": "缺血性心脏病",
+      "analysis_block": "D",
+      "model_id": "full",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "full",
+      "task_id": "ischemic_heart_disease__D__full"
+    },
+    {
+      "outcome_id": "ischemic_heart_disease",
+      "outcome_name": "缺血性心脏病",
+      "analysis_block": "D",
+      "model_id": "drop2020",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "drop2020",
+      "task_id": "ischemic_heart_disease__D__drop2020"
+    },
+    {
+      "outcome_id": "ischemic_heart_disease",
+      "outcome_name": "缺血性心脏病",
+      "analysis_block": "D",
+      "model_id": "dropCA",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "dropCA",
+      "task_id": "ischemic_heart_disease__D__dropCA"
+    },
+    {
+      "outcome_id": "ischemic_heart_disease",
+      "outcome_name": "缺血性心脏病",
+      "analysis_block": "D",
+      "model_id": "dropCA_and2020",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "dropCA_and2020",
+      "task_id": "ischemic_heart_disease__D__dropCA_and2020"
+    },
+    {
+      "outcome_id": "ischemic_heart_disease",
+      "outcome_name": "缺血性心脏病",
+      "analysis_block": "D",
+      "model_id": "dropCA2020only",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "dropCA2020only",
+      "task_id": "ischemic_heart_disease__D__dropCA2020only"
+    },
+    {
+      "outcome_id": "ischemic_heart_disease",
+      "outcome_name": "缺血性心脏病",
+      "analysis_block": "E",
+      "model_id": "M2_relaxed_noLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "relaxed",
+      "task_id": "ischemic_heart_disease__E__M2_relaxed_noLST"
+    },
+    {
+      "outcome_id": "ischemic_heart_disease",
+      "outcome_name": "缺血性心脏病",
+      "analysis_block": "E",
+      "model_id": "M2_relaxed_withLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model) + day_LST_per10",
+      "mode": "relaxed",
+      "task_id": "ischemic_heart_disease__E__M2_relaxed_withLST"
+    },
+    {
+      "outcome_id": "ischemic_heart_disease",
+      "outcome_name": "缺血性心脏病",
+      "analysis_block": "E",
+      "model_id": "M2_strict_noLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "strict",
+      "task_id": "ischemic_heart_disease__E__M2_strict_noLST"
+    },
+    {
+      "outcome_id": "ischemic_heart_disease",
+      "outcome_name": "缺血性心脏病",
+      "analysis_block": "E",
+      "model_id": "M2_strict_withLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model) + day_LST_per10",
+      "mode": "strict",
+      "task_id": "ischemic_heart_disease__E__M2_strict_withLST"
+    },
+    {
+      "outcome_id": "ischemic_heart_disease",
+      "outcome_name": "缺血性心脏病",
+      "analysis_block": "E",
+      "model_id": "M3_relaxed_noLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model)",
+      "mode": "relaxed",
+      "task_id": "ischemic_heart_disease__E__M3_relaxed_noLST"
+    },
+    {
+      "outcome_id": "ischemic_heart_disease",
+      "outcome_name": "缺血性心脏病",
+      "analysis_block": "E",
+      "model_id": "M3_relaxed_withLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model) + day_LST_per10",
+      "mode": "relaxed",
+      "task_id": "ischemic_heart_disease__E__M3_relaxed_withLST"
+    },
+    {
+      "outcome_id": "ischemic_heart_disease",
+      "outcome_name": "缺血性心脏病",
+      "analysis_block": "E",
+      "model_id": "M3_strict_noLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model)",
+      "mode": "strict",
+      "task_id": "ischemic_heart_disease__E__M3_strict_noLST"
+    },
+    {
+      "outcome_id": "ischemic_heart_disease",
+      "outcome_name": "缺血性心脏病",
+      "analysis_block": "E",
+      "model_id": "M3_strict_withLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model) + day_LST_per10",
+      "mode": "strict",
+      "task_id": "ischemic_heart_disease__E__M3_strict_withLST"
+    },
+    {
+      "outcome_id": "asthma",
+      "outcome_name": "哮喘",
+      "analysis_block": "A",
+      "model_id": "reference",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "reference",
+      "task_id": "asthma__A__reference"
+    },
+    {
+      "outcome_id": "asthma",
+      "outcome_name": "哮喘",
+      "analysis_block": "C",
+      "model_id": "M0",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "asthma__C__M0"
+    },
+    {
+      "outcome_id": "asthma",
+      "outcome_name": "哮喘",
+      "analysis_block": "C",
+      "model_id": "M1",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "asthma__C__M1"
+    },
+    {
+      "outcome_id": "asthma",
+      "outcome_name": "哮喘",
+      "analysis_block": "C",
+      "model_id": "M2",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "asthma__C__M2"
+    },
+    {
+      "outcome_id": "asthma",
+      "outcome_name": "哮喘",
+      "analysis_block": "C",
+      "model_id": "M2P",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + precipitation_fs_std_extension + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "asthma__C__M2P"
+    },
+    {
+      "outcome_id": "asthma",
+      "outcome_name": "哮喘",
+      "analysis_block": "C",
+      "model_id": "M3",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "asthma__C__M3"
+    },
+    {
+      "outcome_id": "asthma",
+      "outcome_name": "哮喘",
+      "analysis_block": "C",
+      "model_id": "M3L",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + day_LST_per10 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "asthma__C__M3L"
+    },
+    {
+      "outcome_id": "asthma",
+      "outcome_name": "哮喘",
+      "analysis_block": "C",
+      "model_id": "M3P_joint",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + precipitation_fs_std_extension + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "asthma__C__M3P_joint"
+    },
+    {
+      "outcome_id": "asthma",
+      "outcome_name": "哮喘",
+      "analysis_block": "C",
+      "model_id": "M3PL_joint",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + precipitation_fs_std_extension + day_LST_per10 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "asthma__C__M3PL_joint"
+    },
+    {
+      "outcome_id": "asthma",
+      "outcome_name": "哮喘",
+      "analysis_block": "D",
+      "model_id": "full",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "full",
+      "task_id": "asthma__D__full"
+    },
+    {
+      "outcome_id": "asthma",
+      "outcome_name": "哮喘",
+      "analysis_block": "D",
+      "model_id": "drop2020",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "drop2020",
+      "task_id": "asthma__D__drop2020"
+    },
+    {
+      "outcome_id": "asthma",
+      "outcome_name": "哮喘",
+      "analysis_block": "D",
+      "model_id": "dropCA",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "dropCA",
+      "task_id": "asthma__D__dropCA"
+    },
+    {
+      "outcome_id": "asthma",
+      "outcome_name": "哮喘",
+      "analysis_block": "D",
+      "model_id": "dropCA_and2020",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "dropCA_and2020",
+      "task_id": "asthma__D__dropCA_and2020"
+    },
+    {
+      "outcome_id": "asthma",
+      "outcome_name": "哮喘",
+      "analysis_block": "D",
+      "model_id": "dropCA2020only",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "dropCA2020only",
+      "task_id": "asthma__D__dropCA2020only"
+    },
+    {
+      "outcome_id": "asthma",
+      "outcome_name": "哮喘",
+      "analysis_block": "E",
+      "model_id": "M2_relaxed_noLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "relaxed",
+      "task_id": "asthma__E__M2_relaxed_noLST"
+    },
+    {
+      "outcome_id": "asthma",
+      "outcome_name": "哮喘",
+      "analysis_block": "E",
+      "model_id": "M2_relaxed_withLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model) + day_LST_per10",
+      "mode": "relaxed",
+      "task_id": "asthma__E__M2_relaxed_withLST"
+    },
+    {
+      "outcome_id": "asthma",
+      "outcome_name": "哮喘",
+      "analysis_block": "E",
+      "model_id": "M2_strict_noLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "strict",
+      "task_id": "asthma__E__M2_strict_noLST"
+    },
+    {
+      "outcome_id": "asthma",
+      "outcome_name": "哮喘",
+      "analysis_block": "E",
+      "model_id": "M2_strict_withLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model) + day_LST_per10",
+      "mode": "strict",
+      "task_id": "asthma__E__M2_strict_withLST"
+    },
+    {
+      "outcome_id": "asthma",
+      "outcome_name": "哮喘",
+      "analysis_block": "E",
+      "model_id": "M3_relaxed_noLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model)",
+      "mode": "relaxed",
+      "task_id": "asthma__E__M3_relaxed_noLST"
+    },
+    {
+      "outcome_id": "asthma",
+      "outcome_name": "哮喘",
+      "analysis_block": "E",
+      "model_id": "M3_relaxed_withLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model) + day_LST_per10",
+      "mode": "relaxed",
+      "task_id": "asthma__E__M3_relaxed_withLST"
+    },
+    {
+      "outcome_id": "asthma",
+      "outcome_name": "哮喘",
+      "analysis_block": "E",
+      "model_id": "M3_strict_noLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model)",
+      "mode": "strict",
+      "task_id": "asthma__E__M3_strict_noLST"
+    },
+    {
+      "outcome_id": "asthma",
+      "outcome_name": "哮喘",
+      "analysis_block": "E",
+      "model_id": "M3_strict_withLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model) + day_LST_per10",
+      "mode": "strict",
+      "task_id": "asthma__E__M3_strict_withLST"
+    },
+    {
+      "outcome_id": "cerebrovascular_disease",
+      "outcome_name": "脑血管疾病",
+      "analysis_block": "A",
+      "model_id": "reference",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "reference",
+      "task_id": "cerebrovascular_disease__A__reference"
+    },
+    {
+      "outcome_id": "cerebrovascular_disease",
+      "outcome_name": "脑血管疾病",
+      "analysis_block": "C",
+      "model_id": "M0",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "cerebrovascular_disease__C__M0"
+    },
+    {
+      "outcome_id": "cerebrovascular_disease",
+      "outcome_name": "脑血管疾病",
+      "analysis_block": "C",
+      "model_id": "M1",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "cerebrovascular_disease__C__M1"
+    },
+    {
+      "outcome_id": "cerebrovascular_disease",
+      "outcome_name": "脑血管疾病",
+      "analysis_block": "C",
+      "model_id": "M2",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "cerebrovascular_disease__C__M2"
+    },
+    {
+      "outcome_id": "cerebrovascular_disease",
+      "outcome_name": "脑血管疾病",
+      "analysis_block": "C",
+      "model_id": "M2P",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + precipitation_fs_std_extension + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "cerebrovascular_disease__C__M2P"
+    },
+    {
+      "outcome_id": "cerebrovascular_disease",
+      "outcome_name": "脑血管疾病",
+      "analysis_block": "C",
+      "model_id": "M3",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "cerebrovascular_disease__C__M3"
+    },
+    {
+      "outcome_id": "cerebrovascular_disease",
+      "outcome_name": "脑血管疾病",
+      "analysis_block": "C",
+      "model_id": "M3L",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + day_LST_per10 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "cerebrovascular_disease__C__M3L"
+    },
+    {
+      "outcome_id": "cerebrovascular_disease",
+      "outcome_name": "脑血管疾病",
+      "analysis_block": "C",
+      "model_id": "M3P_joint",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + precipitation_fs_std_extension + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "cerebrovascular_disease__C__M3P_joint"
+    },
+    {
+      "outcome_id": "cerebrovascular_disease",
+      "outcome_name": "脑血管疾病",
+      "analysis_block": "C",
+      "model_id": "M3PL_joint",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + precipitation_fs_std_extension + day_LST_per10 + C(county_model) + C(year_model)",
+      "mode": "common",
+      "task_id": "cerebrovascular_disease__C__M3PL_joint"
+    },
+    {
+      "outcome_id": "cerebrovascular_disease",
+      "outcome_name": "脑血管疾病",
+      "analysis_block": "D",
+      "model_id": "full",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "full",
+      "task_id": "cerebrovascular_disease__D__full"
+    },
+    {
+      "outcome_id": "cerebrovascular_disease",
+      "outcome_name": "脑血管疾病",
+      "analysis_block": "D",
+      "model_id": "drop2020",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "drop2020",
+      "task_id": "cerebrovascular_disease__D__drop2020"
+    },
+    {
+      "outcome_id": "cerebrovascular_disease",
+      "outcome_name": "脑血管疾病",
+      "analysis_block": "D",
+      "model_id": "dropCA",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "dropCA",
+      "task_id": "cerebrovascular_disease__D__dropCA"
+    },
+    {
+      "outcome_id": "cerebrovascular_disease",
+      "outcome_name": "脑血管疾病",
+      "analysis_block": "D",
+      "model_id": "dropCA_and2020",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "dropCA_and2020",
+      "task_id": "cerebrovascular_disease__D__dropCA_and2020"
+    },
+    {
+      "outcome_id": "cerebrovascular_disease",
+      "outcome_name": "脑血管疾病",
+      "analysis_block": "D",
+      "model_id": "dropCA2020only",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "dropCA2020only",
+      "task_id": "cerebrovascular_disease__D__dropCA2020only"
+    },
+    {
+      "outcome_id": "cerebrovascular_disease",
+      "outcome_name": "脑血管疾病",
+      "analysis_block": "E",
+      "model_id": "M2_relaxed_noLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "relaxed",
+      "task_id": "cerebrovascular_disease__E__M2_relaxed_noLST"
+    },
+    {
+      "outcome_id": "cerebrovascular_disease",
+      "outcome_name": "脑血管疾病",
+      "analysis_block": "E",
+      "model_id": "M2_relaxed_withLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model) + day_LST_per10",
+      "mode": "relaxed",
+      "task_id": "cerebrovascular_disease__E__M2_relaxed_withLST"
+    },
+    {
+      "outcome_id": "cerebrovascular_disease",
+      "outcome_name": "脑血管疾病",
+      "analysis_block": "E",
+      "model_id": "M2_strict_noLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+      "mode": "strict",
+      "task_id": "cerebrovascular_disease__E__M2_strict_noLST"
+    },
+    {
+      "outcome_id": "cerebrovascular_disease",
+      "outcome_name": "脑血管疾病",
+      "analysis_block": "E",
+      "model_id": "M2_strict_withLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model) + day_LST_per10",
+      "mode": "strict",
+      "task_id": "cerebrovascular_disease__E__M2_strict_withLST"
+    },
+    {
+      "outcome_id": "cerebrovascular_disease",
+      "outcome_name": "脑血管疾病",
+      "analysis_block": "E",
+      "model_id": "M3_relaxed_noLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model)",
+      "mode": "relaxed",
+      "task_id": "cerebrovascular_disease__E__M3_relaxed_noLST"
+    },
+    {
+      "outcome_id": "cerebrovascular_disease",
+      "outcome_name": "脑血管疾病",
+      "analysis_block": "E",
+      "model_id": "M3_relaxed_withLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model) + day_LST_per10",
+      "mode": "relaxed",
+      "task_id": "cerebrovascular_disease__E__M3_relaxed_withLST"
+    },
+    {
+      "outcome_id": "cerebrovascular_disease",
+      "outcome_name": "脑血管疾病",
+      "analysis_block": "E",
+      "model_id": "M3_strict_noLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model)",
+      "mode": "strict",
+      "task_id": "cerebrovascular_disease__E__M3_strict_noLST"
+    },
+    {
+      "outcome_id": "cerebrovascular_disease",
+      "outcome_name": "脑血管疾病",
+      "analysis_block": "E",
+      "model_id": "M3_strict_withLST",
+      "formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model) + day_LST_per10",
+      "mode": "strict",
+      "task_id": "cerebrovascular_disease__E__M3_strict_withLST"
+    }
+  ],
+  "input_hashes": {
+    "panel": "0dd566c8f9509eb9d4438f56149afc92bc142b92d27bd8aa936721a35d8ba4c5",
+    "weight_model": "066979046d66e6c113e144ad8c35625040a7722bcf81cf63dc2fce44e575430d",
+    "existing_copd_B1_draws": "a86f57d443cdd855340c1a8921ed9995b83d8ba869681ea7ded57f82e218b2e7",
+    "existing_copd_B1_checks": "17f5d5eb4e74d09e0c0522cad2ac1d9d0967ce1d6570128975016929c5788657",
+    "existing_common_results": "fa1437a51e21a390d06dee95c4e4b45af299ab6becbb00d70fa882282a0da84f",
+    "existing_LST_results": "3370382a3c48118198b125812704413cf7b67dab28c9e52e23feb1d84450cf8c",
+    "LST_panel": "99913e5410c408fce13ed59db95f90e1065afe9647669536e43323be086c4da2",
+    "old_pooled_models": "cf69e2cd95027b4c653fa1b2e766d2a5bf15fad65413d2ce2ca92de5a0bd7889",
+    "old_targeted_omission": "462b180aad91c1df106128c44f2be66cb8fe9c35c17beeb1bc7220f77dd4fd57",
+    "hierarchical_B1_results": "78d82c32ea14db362f9d67d66ee49a0ab1420a1e42f6c4b7e2e2d75eebe2a81b",
+    "source_model_specs": "bb1b328ad2354336c00744d8a64426bd867c4a0a6764541852c79a73cf570e22",
+    "source_model_engine": "c69aa780bca104e3a3236340459da26d52df986f4ee6a9c6806e8d0362c67e03",
+    "source_boundary_generator": "267e014d72cab9a60afb9c4b990a4e1b994881db78be718b13d9483a3226c049",
+    "prior_suppression_provenance": "4fb386c1a57ed9fed875b36785a42a67bc3ab98c201183f9fb1836e8404778f1"
+  },
+  "draw_sha256": "5dee2a881fb5d36c88f1c57ed2b5cfe5880e7f5383a6c0870f5c849cb02155a8",
+  "engine_sha256": "ae5342a258994c781e76977e2eea0074d62a7829b7afb3770fd9eda8c9114715",
+  "entry_sha256": "eea856da358d1f72ef494fc33e5f17ec91f7ae455eda66a255bc200c147a45d7"
+}

@@ -1,0 +1,35 @@
+{
+  "config_version": "lst_longrun_v2_qc_zero_recovery",
+  "artifact_version": "v3",
+  "qa_version": "mod11a2_qc_v3_recover_zero_on_valid_lst",
+  "wall_time_hours": 24,
+  "product": "MODIS/061/MOD11A2",
+  "land_mask_product": "MODIS/MOD44W/MOD44W_005_2000_02_24",
+  "county_product": "TIGER/2018/Counties",
+  "state_fips": ["04", "06", "08", "16", "41", "53"],
+  "pilot_state_fips": ["06", "41"],
+  "pilot_years": [2015, 2020],
+  "main_years": [2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020],
+  "optional_years": [2006, 2007, 2008],
+  "season_start_month": 5,
+  "season_end_month_exclusive": 11,
+  "qa_rules": {
+    "strict": "mandatory=0 AND data_quality=0 AND LST_error=0",
+    "relaxed": "mandatory<=1 AND LST_error<=1"
+  },
+  "qc_zero_recovery": "QC has no product FillValue; restore EE-masked zero only where paired LST band is valid",
+  "coverage_rule": {
+    "season_min": 0.70,
+    "each_month_min": 0.50,
+    "require_all_six_months": true,
+    "season_sensitivity": [0.60, 0.80]
+  },
+  "coverage_tolerance": 1e-6,
+  "minimum_pre2020_baseline_years": 6,
+  "gee_max_active_tasks": 1,
+  "local_max_model_processes": 4,
+  "blas_threads_per_process": 1,
+  "random_seed": 20260907,
+  "full_batching": "year_x_six_states; fall back to year_x_state after bounded retries",
+  "diagnostic_counties": ["06037", "06067", "41051", "41025"]
+}

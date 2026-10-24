@@ -1,0 +1,6 @@
+﻿ID,缩写,结局,ICD-10
+copd,COPD,慢性阻塞性肺疾病,J40–J44
+chronic_lower_respiratory,CLRD,慢性下呼吸道疾病,J40–J47
+respiratory_system,RESP,呼吸系统疾病,J00–J98
+circulatory_system,CIRC,循环系统疾病,I00–I99
+ischemic_heart_disease,IHD,缺血性心脏病,I20–I25

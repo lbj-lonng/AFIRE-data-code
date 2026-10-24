@@ -1,0 +1,4 @@
+relation,child,parent,n_county_years,n_draw_comparisons,draw_violations,any_draw_violations,mean_count_violations,public_comparisons,public_violations,max_excess,per_draw_min,per_draw_max
+COPD subset CLRD,copd,chronic_lower_respiratory,3072,92160,9127,857,353,2178,0,8,287,322
+CLRD subset RESP,chronic_lower_respiratory,respiratory_system,3072,92160,3197,585,27,2155,0,8,92,124
+IHD subset CIRC,ischemic_heart_disease,circulatory_system,3072,92160,506,146,9,2381,0,7,11,24

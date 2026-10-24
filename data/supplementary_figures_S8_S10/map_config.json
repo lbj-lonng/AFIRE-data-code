@@ -1,0 +1,33 @@
+{
+  "crs": "EPSG:5070",
+  "crs_name": "NAD83 / Conus Albers",
+  "original_crs": "EPSG:4269 NAD83",
+  "extent": [
+    -2485718.832590791,
+    -375007.3718798052,
+    850367.1883775997,
+    3324487.5946782515
+  ],
+  "boundary_vintage": 2020,
+  "boundary_scale": "1:500,000",
+  "additional_simplification": false,
+  "geographic_crosswalk": "none; exact same FIPS/name entities; not a temporal areal harmonization",
+  "missing_counties": [],
+  "extra_study_counties": [],
+  "duplicate_FIPS": [],
+  "matched_counties": 256,
+  "state_counts": {
+    "AZ": 15,
+    "CA": 58,
+    "CO": 64,
+    "ID": 44,
+    "OR": 36,
+    "WA": 39
+  },
+  "grey_context_states": [
+    "NV",
+    "UT",
+    "WY"
+  ],
+  "scope_limitation": "2020 geometry is a display reference for county identifiers; upstream historical boundaries/aggregation are not authenticated by this exact-key join. No values reallocated."
+}

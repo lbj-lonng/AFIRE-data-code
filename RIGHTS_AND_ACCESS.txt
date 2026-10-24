@@ -1,0 +1,7 @@
+Publication status: locally prepared release candidate. No repository DOI has been assigned.
+No new open-source or data licence is granted by this packaging step. Author/institutional
+rights confirmation and a software licence remain to be supplied. Third-party datasets retain
+their original terms. Cite the original providers using data/Supplementary_References.bib.
+The public candidate excludes allocation-level arrays and reconstructed suppressed county
+death counts. Public mortality exports retain suppression as missing, not zero.
+The separate INTERNAL archive is an author backup, not a public repository upload.

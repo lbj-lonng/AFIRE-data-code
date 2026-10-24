@@ -1,0 +1,90 @@
+catalogue_rank,fire_key,incident_name,year,state,in_six_state_region,n_state_assignments_for_record,location_match_method
+1,2020-CAMNF-000730,DOE,2020,California,True,1,polygon_intersection
+3,2012-ORVAD-000067,Long Draw,2012,Oregon,True,1,polygon_intersection
+4,2011-AZASF-000020,Wallow,2011,Arizona,True,2,polygon_intersection
+4,2011-AZASF-000020,Wallow,2011,New Mexico,False,2,polygon_intersection
+5,2009-AKFAS-000320,Minto Flats South,2009,Alaska,False,1,polygon_intersection
+6,2012-NVWID-020210,Holloway,2012,Nevada,False,2,polygon_intersection
+6,2012-NVWID-020210,Holloway,2012,Oregon,True,2,polygon_intersection
+7,2012-ORVAD-000000,HOLLOWAY,2012,Nevada,False,2,polygon_intersection
+7,2012-ORVAD-000000,HOLLOWAY,2012,Oregon,True,2,polygon_intersection
+8,2018-NVHUMX-020170,Martin,2018,Nevada,False,1,polygon_intersection
+10,RANCH_2018_410202.5,RANCH,2018,California,True,1,polygon_intersection
+11,2018-CAMNF-000849,Ranch,2018,California,True,1,polygon_intersection
+12,2018-CACND-008646,Ranch,2018,California,True,1,polygon_intersection
+13,SCU LIGHTNING COMPLEX_2020_396824.5,SCU LIGHTNING COMPLEX,2020,California,True,1,polygon_intersection
+14,2020-CASNF-001391,CREEK,2020,California,True,1,polygon_intersection
+16,2009-AKUYD-000314,Little Black One,2009,Alaska,False,1,polygon_intersection
+18,2020-CAMNF-000757,HOPKINS,2020,California,True,1,polygon_intersection
+19,2011-TXFDP-001103,Rock House,2011,Texas,False,1,polygon_intersection
+20,2015-AKTAD-000533,Big Creek Two,2015,Alaska,False,1,polygon_intersection
+21,2012-CANOD-003490,Rush,2012,California,True,2,polygon_intersection
+21,2012-CANOD-003490,Rush,2012,Nevada,False,2,polygon_intersection
+22,2010-IDJRD-000387,LONG BUTTE,2010,Idaho,True,1,polygon_intersection
+23,HENNESSEY_2020_305351.9,HENNESSEY,2020,California,True,1,polygon_intersection
+24,2012-NMGNF-000200,Whitewater-Baldy Complex,2012,New Mexico,False,1,polygon_intersection
+25,MUSTANG COMPLEX_2012_287852.2,Mustang Complex,2012,Idaho,True,2,polygon_intersection
+25,MUSTANG COMPLEX_2012_287852.2,Mustang Complex,2012,Montana,False,2,polygon_intersection
+26,THOMAS_2017_281790.9,THOMAS,2017,California,True,1,polygon_intersection
+27,2017-CACND-003583,Thomas,2017,California,True,1,polygon_intersection
+28,2014-ORVAD-000067,Saddle Draw,2014,Oregon,True,1,polygon_intersection
+29,2015-IDOYD-000889,SODA,2015,Idaho,True,2,polygon_intersection
+29,2015-IDOYD-000889,SODA,2015,Oregon,True,2,polygon_intersection
+30,2015-IDBOD-000000,SODA,2015,Idaho,True,2,polygon_intersection
+30,2015-IDBOD-000000,SODA,2015,Oregon,True,2,polygon_intersection
+31,2015-AKTAD-000449,Sushgitit Hills ,2015,Alaska,False,1,polygon_intersection
+32,2017-MTCMR-K7FK,Lodgepole Complex,2017,Montana,False,1,polygon_intersection
+33,2017-MTMCD-000000,Lodgepole Complex,2017,Montana,False,1,polygon_intersection
+34,2013-CACND-002857,Rim,2013,California,True,1,polygon_intersection
+36,2013-CAYNP-000126,RIM,2013,California,True,1,polygon_intersection
+37,RIM_2013_256175.5,RIM,2013,California,True,1,polygon_intersection
+38,CARLTON COMPLEX_2014_251965.3,Carlton Complex,2014,Washington,True,1,polygon_intersection
+39,ASHCREEK_2012_249714.1,AshCreek,2012,Montana,False,1,polygon_intersection
+40,2012-MTNCA-000000,Ash Creek,2012,Montana,False,1,polygon_intersection
+43,2019-AKUYD-000367,Frozen Calf ,2019,Alaska,False,1,polygon_intersection
+44,2018-NVECFX-010299,South Sugarloaf,2018,Nevada,False,1,polygon_intersection
+45,2014-WANES-000487,Carlton,2014,Washington,True,1,polygon_intersection
+46,2018-CAWNP-001084,Carr,2018,California,True,1,polygon_intersection
+47,CARR_2018_229651.4,CARR ,2018,California,True,1,polygon_intersection
+48,2018-CANOD-001084,Carr,2018,California,True,1,polygon_intersection
+49,2018-CASHU-007808,CARR,2018,California,True,1,polygon_intersection
+50,2019-AKSWS-000174,Old Grouch Top,2019,Alaska,False,1,polygon_intersection
+51,2015-AKGAD-000539,Holtnakatna,2015,Alaska,False,1,polygon_intersection
+52,2011-AZCHP-001247,Horseshoe 2,2011,Arizona,True,1,polygon_intersection
+53,2011-AZCNF-000034,Horseshoe2,2011,Arizona,True,1,polygon_intersection
+56,2015-WACOA-000157,North Star,2015,Washington,True,1,polygon_intersection
+58,2012-IDJRD-000263,KINYON ROAD,2012,Idaho,True,1,polygon_intersection
+59,2020-COARF-000636,Cameron Peak,2020,Colorado,True,1,wfigs_point_fallback_no_perimeter
+62,2017-NVNNS-010193,Roosters Comb,2017,Nevada,False,1,polygon_intersection
+63,2020-ORWSA-000077,Lionshead,2020,Oregon,True,1,wfigs_point_fallback_no_perimeter
+64,2014-AKKKS-000140,Funny River,2014,Alaska,False,1,polygon_intersection
+65,2013-AKSWS-000144,Lime Hills,2013,Alaska,False,1,polygon_intersection
+66,2020-AZTNF-001581,Bush,2020,Arizona,True,1,wfigs_point_fallback_no_perimeter
+67,2020-ORWIF-200299,Beachie Creek,2020,Oregon,True,1,wfigs_point_fallback_no_perimeter
+68,2017-ORRSF-000326,Chetco Bar,2017,Oregon,True,1,polygon_intersection
+69,2020-WACOA-200130,Cold Springs ,2020,Washington,True,1,wfigs_point_fallback_no_perimeter
+70,2016-IDBOF-000539,Pioneer,2016,Idaho,True,1,polygon_intersection
+71,2019-AKUYD-000324,Hess Creek,2019,Alaska,False,1,polygon_intersection
+72,HALSTEAD_2012_179308.5,Halstead,2012,Idaho,True,1,polygon_intersection
+73,2016-WAHFR-KJ14,Range 12,2016,Washington,True,1,polygon_intersection
+74,2018-ORRSF-000354,Klondike,2018,Oregon,True,1,polygon_intersection
+75,2016-WASPD-500344,Range 12,2016,Washington,True,1,polygon_intersection
+79,2020-ORWIF-200430,Holiday Farm,2020,Oregon,True,1,wfigs_point_fallback_no_perimeter
+80,2020-CASQF-002541,CASTLE,2020,California,True,1,wfigs_point_fallback_no_perimeter
+81,2009-AKUYD-000458,Big Creek,2009,Alaska,False,1,polygon_intersection
+82,2019-AKKKS-000181,Swan Lake,2019,Alaska,False,1,polygon_intersection
+83,2015-WANES-001219,Tunk Block,2015,Washington,True,1,polygon_intersection
+84,2009-AKTAD-000420,Titna River,2009,Alaska,False,1,polygon_intersection
+85,2009-AKSWS-000152,Tonclonukna Creek,2009,Alaska,False,1,polygon_intersection
+89,2009-CACDD-003622,Station,2009,California,True,1,polygon_intersection
+90,2012-ORBUD-020072,Miller Homestead,2012,Oregon,True,1,polygon_intersection
+91,2017-MTLNF-001464,Rice Ridge,2017,Montana,False,1,polygon_intersection
+92,2020-CAKNF-007035,SLATER,2020,California,True,1,wfigs_point_fallback_no_perimeter
+93,2011-NMBAP-000026,Las Conchas,2011,New Mexico,False,1,polygon_intersection
+94,2011-NMSNF-000099,Las Conchas,2011,New Mexico,False,1,polygon_intersection
+96,_2013_154583.7,,2013,Idaho,True,1,polygon_intersection
+97,2017-NVEKD-010220,Snowstorm,2017,Nevada,False,1,polygon_intersection
+98,CAMP_2018_153335.6,CAMP,2018,California,True,1,polygon_intersection
+99,2018-CANOD-016737,Camp,2018,California,True,1,polygon_intersection
+100,2017-GAOKR-KYJ7,West Mims,2017,Florida,False,2,polygon_intersection
+100,2017-GAOKR-KYJ7,West Mims,2017,Georgia,False,2,polygon_intersection

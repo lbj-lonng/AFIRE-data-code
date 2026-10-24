@@ -1,0 +1,9 @@
+model_id,formula
+M0,pm25_iqr + pm25_iqr:ses_baseline_std + C(county_model) + C(year_model)
+M1,pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + C(county_model) + C(year_model)
+M2,pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)
+M2P,pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + precipitation_fs_std_extension + C(county_model) + C(year_model)
+M3,pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model)
+M3L,pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + day_LST_per10 + C(county_model) + C(year_model)
+M3P_joint,pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + precipitation_fs_std_extension + C(county_model) + C(year_model)
+M3PL_joint,pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + precipitation_fs_std_extension + day_LST_per10 + C(county_model) + C(year_model)

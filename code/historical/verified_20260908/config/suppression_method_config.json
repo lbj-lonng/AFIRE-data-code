@@ -1,0 +1,34 @@
+{
+  "version": "bem_hbmi_pilot_v2",
+  "seed": 2026090801,
+  "pseudo_suppression": {
+    "visible_count_lower": 10,
+    "visible_count_upper": 19,
+    "minimum_cells_per_group": 2,
+    "draws_per_group": 100,
+    "bootstrap_replicates": 2000
+  },
+  "hierarchical_imputation": {
+    "outcome": "copd",
+    "years_for_rate_model": [2006, 2020],
+    "boundaries": [[0, 9], [1, 9]],
+    "chains": 3,
+    "burn_in": 200,
+    "thin": 10,
+    "draws_per_chain": 30
+  },
+  "health_model": {
+    "model": "fixed COPD M2 reference",
+    "years": [2009, 2020],
+    "outcome": "copd",
+    "term": "pm25_iqr:ses_baseline_std",
+    "offset": "log(population)",
+    "fixed_effects": ["county", "year"],
+    "cluster_standard_errors": "county"
+  },
+  "interpretation": {
+    "candidate_selection_metric": "pseudo-suppression predictive performance, never health-model P value",
+    "boundary_scenarios": "sensitivity assumptions, not posterior probabilities",
+    "target_variables_excluded_from_imputation_model": ["smoke PM2.5", "SES", "smoke by SES interaction"]
+  }
+}

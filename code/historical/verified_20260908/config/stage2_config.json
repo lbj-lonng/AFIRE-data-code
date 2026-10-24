@@ -1,0 +1,17 @@
+{
+  "stage": "targeted_validation_stage2",
+  "created": "2026-09-06",
+  "source_panel": "experiment_feasibility_20260906/source_snapshot/all/04/data_processed/county_year_disease_panel_v6_3.csv",
+  "primary_imputation": "imputed_deaths_eb_history_v5.npz",
+  "primary_outcome": "copd",
+  "year_range": [2009, 2020],
+  "reference_model": "O10_temperature_adjusted_2009_2020",
+  "reference_formula": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+  "family": "negative_binomial_glm_fixed_alpha_per_sample",
+  "offset": "log(population)",
+  "standard_errors": "county-clustered with finite-sample correction",
+  "projection_method": "numpy.linalg.lstsq",
+  "projection_rcond": 1e-10,
+  "random_seeds_inherited": {"eb_history": 20260728, "population_only": 20260729, "equal_weight": 20260730},
+  "no_new_random_draws": true
+}

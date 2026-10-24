@@ -1,0 +1,257 @@
+﻿county_fips,county,state_abbr,n_records,suppressed_records,suppressed_record_percent
+04025,"Yavapai County, AZ",AZ,60,0,0.0
+04021,"Pinal County, AZ",AZ,60,0,0.0
+04013,"Maricopa County, AZ",AZ,60,0,0.0
+04003,"Cochise County, AZ",AZ,60,0,0.0
+04011,"Greenlee County, AZ",AZ,60,44,73.33333333333333
+04007,"Gila County, AZ",AZ,60,0,0.0
+04005,"Coconino County, AZ",AZ,60,0,0.0
+04019,"Pima County, AZ",AZ,60,0,0.0
+04015,"Mohave County, AZ",AZ,60,0,0.0
+04009,"Graham County, AZ",AZ,60,0,0.0
+04012,"La Paz County, AZ",AZ,60,0,0.0
+04017,"Navajo County, AZ",AZ,60,0,0.0
+04027,"Yuma County, AZ",AZ,60,0,0.0
+04023,"Santa Cruz County, AZ",AZ,60,7,11.666666666666666
+04001,"Apache County, AZ",AZ,60,0,0.0
+06041,"Marin County, CA",CA,60,0,0.0
+06003,"Alpine County, CA",CA,60,30,50.0
+06061,"Placer County, CA",CA,60,0,0.0
+06017,"El Dorado County, CA",CA,60,0,0.0
+06009,"Calaveras County, CA",CA,60,0,0.0
+06057,"Nevada County, CA",CA,60,0,0.0
+06091,"Sierra County, CA",CA,60,48,80.0
+06005,"Amador County, CA",CA,60,0,0.0
+06043,"Mariposa County, CA",CA,60,4,6.666666666666667
+06013,"Contra Costa County, CA",CA,60,0,0.0
+06063,"Plumas County, CA",CA,60,2,3.333333333333333
+06079,"San Luis Obispo County, CA",CA,60,0,0.0
+06081,"San Mateo County, CA",CA,60,0,0.0
+06097,"Sonoma County, CA",CA,60,0,0.0
+06109,"Tuolumne County, CA",CA,60,0,0.0
+06105,"Trinity County, CA",CA,60,9,15.0
+06027,"Inyo County, CA",CA,60,0,0.0
+06111,"Ventura County, CA",CA,60,0,0.0
+06055,"Napa County, CA",CA,60,0,0.0
+06087,"Santa Cruz County, CA",CA,60,0,0.0
+06085,"Santa Clara County, CA",CA,60,0,0.0
+06051,"Mono County, CA",CA,60,43,71.66666666666667
+06089,"Shasta County, CA",CA,60,0,0.0
+06095,"Solano County, CA",CA,60,0,0.0
+06023,"Humboldt County, CA",CA,60,0,0.0
+06093,"Siskiyou County, CA",CA,60,0,0.0
+06059,"Orange County, CA",CA,60,0,0.0
+06007,"Butte County, CA",CA,60,0,0.0
+06049,"Modoc County, CA",CA,60,11,18.33333333333333
+06001,"Alameda County, CA",CA,60,0,0.0
+06067,"Sacramento County, CA",CA,60,0,0.0
+06045,"Mendocino County, CA",CA,60,0,0.0
+06035,"Lassen County, CA",CA,60,0,0.0
+06113,"Yolo County, CA",CA,60,0,0.0
+06073,"San Diego County, CA",CA,60,0,0.0
+06033,"Lake County, CA",CA,60,0,0.0
+06083,"Santa Barbara County, CA",CA,60,0,0.0
+06065,"Riverside County, CA",CA,60,0,0.0
+06021,"Glenn County, CA",CA,60,0,0.0
+06015,"Del Norte County, CA",CA,60,0,0.0
+06103,"Tehama County, CA",CA,60,0,0.0
+06069,"San Benito County, CA",CA,60,0,0.0
+06075,"San Francisco County, CA",CA,60,0,0.0
+06101,"Sutter County, CA",CA,60,0,0.0
+06071,"San Bernardino County, CA",CA,60,0,0.0
+06099,"Stanislaus County, CA",CA,60,0,0.0
+06115,"Yuba County, CA",CA,60,0,0.0
+06077,"San Joaquin County, CA",CA,60,0,0.0
+06053,"Monterey County, CA",CA,60,0,0.0
+06011,"Colusa County, CA",CA,60,16,26.666666666666668
+06029,"Kern County, CA",CA,60,0,0.0
+06031,"Kings County, CA",CA,60,0,0.0
+06039,"Madera County, CA",CA,60,0,0.0
+06019,"Fresno County, CA",CA,60,0,0.0
+06037,"Los Angeles County, CA",CA,60,0,0.0
+06107,"Tulare County, CA",CA,60,0,0.0
+06047,"Merced County, CA",CA,60,0,0.0
+06025,"Imperial County, CA",CA,60,0,0.0
+08053,"Hinsdale County, CO",CO,60,26,43.333333333333336
+08035,"Douglas County, CO",CO,60,0,0.0
+08079,"Mineral County, CO",CO,60,36,60.0
+08039,"Elbert County, CO",CO,60,15,25.0
+08097,"Pitkin County, CO",CO,60,47,78.33333333333333
+08107,"Routt County, CO",CO,60,39,65.0
+08014,"Broomfield County, CO",CO,60,0,0.0
+08093,"Park County, CO",CO,60,34,56.66666666666666
+08019,"Clear Creek County, CO",CO,60,43,71.66666666666667
+08117,"Summit County, CO",CO,60,44,73.33333333333333
+08091,"Ouray County, CO",CO,60,49,81.66666666666667
+08049,"Grand County, CO",CO,60,43,71.66666666666667
+08119,"Teller County, CO",CO,60,12,20.0
+08103,"Rio Blanco County, CO",CO,60,47,78.33333333333333
+08059,"Jefferson County, CO",CO,60,0,0.0
+08007,"Archuleta County, CO",CO,60,33,55.00000000000001
+08067,"La Plata County, CO",CO,60,0,0.0
+08113,"San Miguel County, CO",CO,60,37,61.66666666666667
+08047,"Gilpin County, CO",CO,60,52,86.66666666666667
+08017,"Cheyenne County, CO",CO,60,57,95.0
+08013,"Boulder County, CO",CO,60,0,0.0
+08057,"Jackson County, CO",CO,60,49,81.66666666666667
+08051,"Gunnison County, CO",CO,60,43,71.66666666666667
+08069,"Larimer County, CO",CO,60,0,0.0
+08037,"Eagle County, CO",CO,60,39,65.0
+08015,"Chaffee County, CO",CO,60,10,16.666666666666664
+08061,"Kiowa County, CO",CO,60,58,96.66666666666669
+08077,"Mesa County, CO",CO,60,0,0.0
+08041,"El Paso County, CO",CO,60,0,0.0
+08027,"Custer County, CO",CO,60,48,80.0
+08081,"Moffat County, CO",CO,60,18,30.0
+08009,"Baca County, CO",CO,60,41,68.33333333333333
+08033,"Dolores County, CO",CO,60,46,76.66666666666667
+08121,"Washington County, CO",CO,60,42,70.0
+08005,"Arapahoe County, CO",CO,60,0,0.0
+08095,"Phillips County, CO",CO,60,42,70.0
+08029,"Delta County, CO",CO,60,0,0.0
+08125,"Yuma County, CO",CO,60,29,48.333333333333336
+08075,"Logan County, CO",CO,60,1,1.6666666666666667
+08063,"Kit Carson County, CO",CO,60,25,41.66666666666667
+08085,"Montrose County, CO",CO,60,0,0.0
+08115,"Sedgwick County, CO",CO,60,46,76.66666666666667
+08123,"Weld County, CO",CO,60,0,0.0
+08083,"Montezuma County, CO",CO,60,2,3.333333333333333
+08045,"Garfield County, CO",CO,60,0,0.0
+08111,"San Juan County, CO",CO,60,25,41.66666666666667
+08073,"Lincoln County, CO",CO,60,42,70.0
+08105,"Rio Grande County, CO",CO,60,10,16.666666666666664
+08043,"Fremont County, CO",CO,60,0,0.0
+08101,"Pueblo County, CO",CO,60,0,0.0
+08001,"Adams County, CO",CO,60,0,0.0
+08071,"Las Animas County, CO",CO,60,8,13.333333333333334
+08055,"Huerfano County, CO",CO,60,13,21.666666666666668
+08025,"Crowley County, CO",CO,60,46,76.66666666666667
+08031,"Denver County, CO",CO,60,0,0.0
+08087,"Morgan County, CO",CO,60,0,0.0
+08099,"Prowers County, CO",CO,60,7,11.666666666666666
+08021,"Conejos County, CO",CO,60,22,36.66666666666666
+08089,"Otero County, CO",CO,60,0,0.0
+08003,"Alamosa County, CO",CO,60,1,1.6666666666666667
+08011,"Bent County, CO",CO,60,30,50.0
+08065,"Lake County, CO",CO,60,48,80.0
+08109,"Saguache County, CO",CO,60,46,76.66666666666667
+08023,"Costilla County, CO",CO,60,52,86.66666666666667
+16085,"Valley County, ID",ID,60,46,76.66666666666667
+16037,"Custer County, ID",ID,60,48,80.0
+16029,"Caribou County, ID",ID,60,40,66.66666666666666
+16001,"Ada County, ID",ID,60,0,0.0
+16013,"Blaine County, ID",ID,60,36,60.0
+16023,"Butte County, ID",ID,60,52,86.66666666666667
+16071,"Oneida County, ID",ID,60,42,70.0
+16007,"Bear Lake County, ID",ID,60,39,65.0
+16051,"Jefferson County, ID",ID,60,16,26.666666666666668
+16043,"Fremont County, ID",ID,60,29,48.333333333333336
+16003,"Adams County, ID",ID,60,48,80.0
+16041,"Franklin County, ID",ID,60,37,61.66666666666667
+16017,"Bonner County, ID",ID,60,0,0.0
+16019,"Bonneville County, ID",ID,60,0,0.0
+16081,"Teton County, ID",ID,60,46,76.66666666666667
+16055,"Kootenai County, ID",ID,60,0,0.0
+16035,"Clearwater County, ID",ID,60,25,41.66666666666667
+16015,"Boise County, ID",ID,60,45,75.0
+16005,"Bannock County, ID",ID,60,0,0.0
+16069,"Nez Perce County, ID",ID,60,0,0.0
+16025,"Camas County, ID",ID,60,31,51.66666666666667
+16011,"Bingham County, ID",ID,60,0,0.0
+16021,"Boundary County, ID",ID,60,29,48.333333333333336
+16059,"Lemhi County, ID",ID,60,27,45.0
+16039,"Elmore County, ID",ID,60,4,6.666666666666667
+16061,"Lewis County, ID",ID,60,48,80.0
+16045,"Gem County, ID",ID,60,4,6.666666666666667
+16083,"Twin Falls County, ID",ID,60,0,0.0
+16009,"Benewah County, ID",ID,60,7,11.666666666666666
+16075,"Payette County, ID",ID,60,0,0.0
+16049,"Idaho County, ID",ID,60,3,5.0
+16077,"Power County, ID",ID,60,41,68.33333333333333
+16079,"Shoshone County, ID",ID,60,0,0.0
+16063,"Lincoln County, ID",ID,60,53,88.33333333333333
+16057,"Latah County, ID",ID,60,9,15.0
+16087,"Washington County, ID",ID,60,23,38.333333333333336
+16031,"Cassia County, ID",ID,60,11,18.33333333333333
+16067,"Minidoka County, ID",ID,60,10,16.666666666666664
+16027,"Canyon County, ID",ID,60,0,0.0
+16047,"Gooding County, ID",ID,60,15,25.0
+16053,"Jerome County, ID",ID,60,4,6.666666666666667
+16033,"Clark County, ID",ID,60,35,58.333333333333336
+16065,"Madison County, ID",ID,60,35,58.333333333333336
+16073,"Owyhee County, ID",ID,60,28,46.66666666666666
+41005,"Clackamas County, OR",OR,60,0,0.0
+41017,"Deschutes County, OR",OR,60,0,0.0
+41069,"Wheeler County, OR",OR,60,51,85.0
+41063,"Wallowa County, OR",OR,60,37,61.66666666666667
+41009,"Columbia County, OR",OR,60,0,0.0
+41067,"Washington County, OR",OR,60,0,0.0
+41023,"Grant County, OR",OR,60,28,46.66666666666666
+41021,"Gilliam County, OR",OR,60,44,73.33333333333333
+41053,"Polk County, OR",OR,60,0,0.0
+41003,"Benton County, OR",OR,60,0,0.0
+41055,"Sherman County, OR",OR,60,54,90.0
+41013,"Crook County, OR",OR,60,0,0.0
+41037,"Lake County, OR",OR,60,26,43.333333333333336
+41071,"Yamhill County, OR",OR,60,0,0.0
+41007,"Clatsop County, OR",OR,60,0,0.0
+41015,"Curry County, OR",OR,60,0,0.0
+41043,"Linn County, OR",OR,60,0,0.0
+41061,"Union County, OR",OR,60,1,1.6666666666666667
+41025,"Harney County, OR",OR,60,40,66.66666666666666
+41001,"Baker County, OR",OR,60,2,3.333333333333333
+41041,"Lincoln County, OR",OR,60,0,0.0
+41029,"Jackson County, OR",OR,60,0,0.0
+41057,"Tillamook County, OR",OR,60,0,0.0
+41019,"Douglas County, OR",OR,60,0,0.0
+41039,"Lane County, OR",OR,60,0,0.0
+41065,"Wasco County, OR",OR,60,0,0.0
+41035,"Klamath County, OR",OR,60,0,0.0
+41027,"Hood River County, OR",OR,60,23,38.333333333333336
+41011,"Coos County, OR",OR,60,0,0.0
+41051,"Multnomah County, OR",OR,60,0,0.0
+41033,"Josephine County, OR",OR,60,0,0.0
+41059,"Umatilla County, OR",OR,60,0,0.0
+41031,"Jefferson County, OR",OR,60,9,15.0
+41049,"Morrow County, OR",OR,60,37,61.66666666666667
+41047,"Marion County, OR",OR,60,0,0.0
+41045,"Malheur County, OR",OR,60,0,0.0
+53055,"San Juan County, WA",WA,60,23,38.333333333333336
+53029,"Island County, WA",WA,60,0,0.0
+53043,"Lincoln County, WA",WA,60,27,45.0
+53067,"Thurston County, WA",WA,60,0,0.0
+53035,"Kitsap County, WA",WA,60,0,0.0
+53059,"Skamania County, WA",WA,60,38,63.33333333333333
+53031,"Jefferson County, WA",WA,60,0,0.0
+53061,"Snohomish County, WA",WA,60,0,0.0
+53033,"King County, WA",WA,60,0,0.0
+53003,"Asotin County, WA",WA,60,0,0.0
+53023,"Garfield County, WA",WA,60,52,86.66666666666667
+53011,"Clark County, WA",WA,60,0,0.0
+53065,"Stevens County, WA",WA,60,0,0.0
+53005,"Benton County, WA",WA,60,0,0.0
+53063,"Spokane County, WA",WA,60,0,0.0
+53009,"Clallam County, WA",WA,60,0,0.0
+53069,"Wahkiakum County, WA",WA,60,46,76.66666666666667
+53045,"Mason County, WA",WA,60,0,0.0
+53057,"Skagit County, WA",WA,60,0,0.0
+53053,"Pierce County, WA",WA,60,0,0.0
+53007,"Chelan County, WA",WA,60,0,0.0
+53073,"Whatcom County, WA",WA,60,0,0.0
+53051,"Pend Oreille County, WA",WA,60,9,15.0
+53013,"Columbia County, WA",WA,60,42,70.0
+53041,"Lewis County, WA",WA,60,0,0.0
+53049,"Pacific County, WA",WA,60,0,0.0
+53039,"Klickitat County, WA",WA,60,3,5.0
+53019,"Ferry County, WA",WA,60,25,41.66666666666667
+53015,"Cowlitz County, WA",WA,60,0,0.0
+53037,"Kittitas County, WA",WA,60,0,0.0
+53071,"Walla Walla County, WA",WA,60,0,0.0
+53027,"Grays Harbor County, WA",WA,60,0,0.0
+53075,"Whitman County, WA",WA,60,2,3.333333333333333
+53017,"Douglas County, WA",WA,60,0,0.0
+53047,"Okanogan County, WA",WA,60,0,0.0
+53025,"Grant County, WA",WA,60,0,0.0
+53077,"Yakima County, WA",WA,60,0,0.0
+53021,"Franklin County, WA",WA,60,0,0.0
+53001,"Adams County, WA",WA,60,26,43.333333333333336

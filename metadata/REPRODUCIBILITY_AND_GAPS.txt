@@ -1,0 +1,45 @@
+AFIRE release audit — 2026-10-24
+
+Current evidence scope: four main figures, Supplementary Figures S1-S10, five mortality
+outcomes and 2009-2020. Source Data retain all 135 stored health-result rows. No model
+was fitted, no allocation was generated and no new inferential interval was calculated
+in this packaging task. The original seven-test Holm family is unchanged.
+
+Original experiment: Afire/all/01-04. Later additions: B1 joint adjustment (2026-09-09)
+and seven-outcome extension (2026-09-11). Current five-outcome manuscript sources:
+AFIRE_2009_2020_five_outcomes_20260915_194616; integrated Supplement dated 2026-09-16;
+additional S8-S10 dated 2026-09-17. Manuscript availability wording checked against
+Main_Text_EN_revised.docx and Supplementary_Information_EN_revised.docx dated release
+folder AFIRE_EN_language_revised_20261020. The original documents are not modified.
+
+Data access routes:
+1. Derived aggregate/figure data: accompanying Source Data in this release.
+2. Reused public sources: provider routes in README and the supplied BibTeX file.
+3. Allocation arrays/reconstructed suppressed county counts: excluded from public
+   release; preserved in a separate author-only local backup. There is no established
+   approved controlled-access committee or request route to claim. A future access
+   statement must identify a real responsible party and approved process first.
+
+Reproducibility levels:
+- Standard-library verification: file integrity, row scope, suppression/zero distinction,
+  paired validation records and transformations of stored estimates.
+- Portable plotting adapter: stages frozen inputs and the archived plotting code; changes
+  paths only in staged copies. See the separately recorded reproduction run.
+- Full mortality-model refit: NOT tested here. The historical code and local backup are
+  provided for provenance; they are not a newly validated end-to-end modelling release.
+- Raw-source reconstruction: incomplete. Several upstream versions and aggregation
+  records remain unresolved.
+
+Specific remaining gaps before claiming fully reproducible public analysis:
+- Reconcile the Linux project-root/input paths in the B1 and extension configurations.
+- Recover archived CDC query responses/download logs and confirm applicable reuse terms.
+- Certify exact socioeconomic-index components, weights and missing-data processing.
+- Recover precise source versions/units and aggregation scripts for remaining covariates.
+- Recover fire-catalogue extraction version/date, full-universe ranking and deduplication.
+- Reconstruct and test the original model environment, including original package versions.
+- Author/institution must choose software/data licensing within the rights they hold.
+- Archive a versioned release with a persistent identifier; no DOI is invented here.
+
+CDC WONDER rules are not evidence that model-generated hidden-cell arrays may be openly
+redistributed. Conversely, this package does not assert that all derived aggregate data
+are legally restricted. Existing public records and suppression flags are preserved.

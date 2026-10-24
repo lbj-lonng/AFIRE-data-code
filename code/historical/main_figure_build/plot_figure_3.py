@@ -1,0 +1,20 @@
+from shared_style import *
+def build():
+    fig=plt.figure(figsize=(183/25.4,168/25.4));a=axes(fig,[13,98,67,56],'a');b=axes(fig,[109,98,66,56],'b');c=axes(fig,[31,20,56,50],'c');d=axes(fig,[122,20,55,50],'d')
+    cm=plt.get_cmap('Blues');norm=Normalize(0,100);data=county_map(a,'suppressed_record_percent',cm,norm);title(a,'a','Original suppressed records');cbar(fig,cm,norm,[22,90,48,2.5],'Suppressed records (%)',[0,25,50,75,100]);panel_data(3,'a',data[['county_fips','state_abbr','n_records','suppressed_records','suppressed_record_percent']])
+    sup=read('suppression').set_index('cause_id').loc[IDS].reset_index();panel_data(3,'b',sup);b.axis('off');title(b,'b','Two distinct denominators')
+    bl=axes(fig,[111,100,26,43],'b_records');br=axes(fig,[151,100,26,43],'b_deaths');ys=np.arange(len(IDS))
+    bl.barh(ys,sup.record_percent,color=BLUE,height=.5);br.barh(ys,sup.hidden_percent,color=ORANGE,height=.5)
+    for ax in [bl,br]:ax.set(xlim=(0,45),ylim=(len(IDS)-.35,-.65),yticks=ys,xticks=[0,20,40]);ax.tick_params(axis='y',length=0);ax.spines['left'].set_visible(False)
+    bl.set(xlim=(0,32),xticks=[0,15,30]);br.set(xlim=(0,1.5),xticks=[0,.5,1,1.5])
+    bl.set_yticklabels(LABELS);br.set_yticklabels([]);bl.set_xlabel('Records (%)');br.set_xlabel('Deaths (%)')
+    fig.text(111/183,148/168,'Suppressed',fontsize=7,color=BLUE);fig.text(148/183,148/168,'Hidden remainder',fontsize=7,color=ORANGE)
+    val=read('validation');val=val[val.scope.eq('all_outcomes')].set_index('method').loc[['equal','population','loyo_fixed_EB','loyo_hierarchical_EB']].reset_index();assert len(val)==4
+    labels=['Equal','Population','Fixed EB','Hierarchical EB'];colors=[GREY,ORANGE,BLUE,GREEN];ys=np.arange(4)
+    c.barh(ys,val.MAE,height=.55,color=colors);c.set(yticks=ys,yticklabels=labels,ylim=(3.65,-.65),xlim=(0,3.3),xticks=[0,1,2,3],xlabel='Mean absolute error (deaths)');c.tick_params(axis='y',length=0);title(c,'c','Pseudo-suppression error')
+    d.axvline(95,color=BLACK,ls='--',lw=.8);d.scatter(val.coverage_95*100,ys,c=colors,s=26,zorder=3);d.set(yticks=ys,yticklabels=labels,ylim=(3.65,-.65),xlim=(75,100),xticks=[75,85,95,100],xlabel='Empirical coverage (%)');d.tick_params(axis='y',length=0);title(d,'d','Allocation-interval coverage')
+    for y,v in zip(ys,val.MAE):c.text(v+.05,y,f'{v:.2f}',va='center',fontsize=7)
+    for y,v in zip(ys,val.coverage_95*100):d.annotate(f'{v:.1f}',(v,y),xytext=(0,-12),textcoords='offset points',ha='center',fontsize=7)
+    panel_data(3,'c',val);panel_data(3,'d',val)
+    finish(fig,'Figure_3',[a,b,c,d],rows=[['a','b'],['c','d']])
+if __name__=='__main__':build()

@@ -1,0 +1,6 @@
+﻿死因,参考模型,联合模型,县年数,县数,配对分配份数,键与分配一致
+COPD,C/M2,C/M3PL_joint,3062,256,30,是
+CLRD,C/M2,C/M3PL_joint,3062,256,30,是
+RESP,C/M2,C/M3PL_joint,3062,256,30,是
+CIRC,C/M2,C/M3PL_joint,3062,256,30,是
+IHD,C/M2,C/M3PL_joint,3062,256,30,是

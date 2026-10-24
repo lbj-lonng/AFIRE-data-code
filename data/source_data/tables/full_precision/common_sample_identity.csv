@@ -1,0 +1,6 @@
+outcome_id,reference_n,joint_n,n_counties,n_states,year_min,year_max,keys_order_equal,imputations_equal,actual_allocation_values_equal,selected_allocation_sha256_i64le,status
+copd,3062,3062,256,6,2009,2020,True,30,True,9f311c2a008f734d2a8f23bfdcb34654d8897d74ed690e8a2432196b4b7cda2d,PASS
+chronic_lower_respiratory,3062,3062,256,6,2009,2020,True,30,True,2d5cd6954f06d8ede0f16b5e0407113a92f331d536eba2dfc6ba0a6b77ed342f,PASS
+respiratory_system,3062,3062,256,6,2009,2020,True,30,True,dac711b629f99f517cd73043aa047fb70ac7b4f641f5cb52c644fab912e194c5,PASS
+circulatory_system,3062,3062,256,6,2009,2020,True,30,True,9064af731080c26f1f63fe7c5e5fcc66f3f0203c36a736e17c1a3eba3c51acc7,PASS
+ischemic_heart_disease,3062,3062,256,6,2009,2020,True,30,True,adda63b4d3f57e201451116f5352b3f81f177973ef7421454d3ca2808f1a437b,PASS

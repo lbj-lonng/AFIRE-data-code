@@ -1,0 +1,32 @@
+{
+  "cutpoints": {
+    "exposure": [
+      0.5121696913861029,
+      1.0911404955498285
+    ],
+    "disadvantage": [
+      -0.3970064762350987,
+      0.279760909449237
+    ]
+  },
+  "rule": "linear sample quantiles; lower bin includes upper boundary; display bins only",
+  "weights": "equal counties; long-term means equal across 12 years",
+  "annual_matrix_colour_normalization": "square root (gamma 0.5), original-unit colourbar, no clipping or winsorization",
+  "bivariate_colours_rows_disadvantage_columns_exposure": [
+    [
+      "#e5e5e5",
+      "#aac7da",
+      "#5c99bd"
+    ],
+    [
+      "#d8abc5",
+      "#a8a5c0",
+      "#637ba7"
+    ],
+    [
+      "#be699d",
+      "#955d99",
+      "#593f80"
+    ]
+  ]
+}

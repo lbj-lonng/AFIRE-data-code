@@ -1,0 +1,88 @@
+{
+  "analysis_id": "AFIRE_B1_joint_adjustment_20260909_233833",
+  "protocol_version": "B1_joint_adjustment_v1_frozen_20260909",
+  "project_root": "/home/yyy/zhou/Health/9.6",
+  "output_root": "/home/yyy/zhou/Health/9.6/analysis/AFIRE_B1_joint_adjustment_20260909_233833",
+  "primary_imputation": "fixed_EB_B1_1_9",
+  "historical_stress_test": "fixed_EB_B0_0_9",
+  "method_sensitivity": "hierarchical_EB_B1_1_9",
+  "imputations": 30,
+  "fixed_eb_seed_existing_copd": 202609061,
+  "fixed_eb_seed_extension_base": 202609061,
+  "max_workers": 4,
+  "blas_threads_per_worker": 1,
+  "years": [2009, 2020],
+  "states": ["AZ", "CA", "CO", "ID", "OR", "WA"],
+  "primary_outcome": "copd",
+  "secondary_outcomes": [
+    "respiratory_system",
+    "chronic_lower_respiratory",
+    "asthma",
+    "circulatory_system",
+    "ischemic_heart_disease",
+    "cerebrovascular_disease"
+  ],
+  "inputs": {
+    "panel": "experiment_feasibility_20260906/source_snapshot/all/04/data_processed/county_year_disease_panel_v6_3.csv",
+    "weight_model": "experiment_feasibility_20260906/source_snapshot/all/03/tables/imputation_weight_model_v5.csv",
+    "existing_copd_B1_draws": "experiment_validation_stage3_20260906/copd_B1_1_9_draws.npz",
+    "existing_copd_B1_checks": "experiment_validation_stage3_20260906/copd_B1_1_9_imputation_checks.csv",
+    "existing_common_results": "experiment3_imputation_refresh_20260908/tables/01_common_covariate_models_by_imputation.csv",
+    "existing_common_checkpoints": "experiment3_imputation_refresh_20260908/models/checkpoints",
+    "existing_LST_results": "experiment3_imputation_refresh_20260908/tables/03_LST_paired_models_by_imputation.csv",
+    "existing_LST_checkpoints": "experiment3_imputation_refresh_20260908/models/checkpoints",
+    "LST_panel": "experiment_longrun_20260906/processed/main_2009_2020_v3/county_year_LST_long.csv",
+    "old_pooled_models": "experiment_feasibility_20260906/source_snapshot/all/04/results/tables/all_pooled_models_v7.csv",
+    "old_targeted_omission": "experiment_validation_stage2_20260906/03_targeted_omission_models.csv",
+    "hierarchical_B1_results": "experiment_suppression_innovation_20260908/outputs/models/01_scenario_health_model_results.csv",
+    "source_model_specs": "experiment_feasibility_20260906/source_snapshot/all/04/scripts/v7_specs.py",
+    "source_model_engine": "experiment_feasibility_20260906/source_snapshot/all/04/scripts/v7_engine.py",
+    "source_boundary_generator": "experiment_validation_stage3_20260906/stage3_boundary_analysis.py",
+    "prior_suppression_provenance": "experiment_validation_stage3_20260906/01_suppression_provenance.md"
+  },
+  "qa": {
+    "joint_LST_branch": "relaxed daytime",
+    "eligibility_field": "eligible_s070",
+    "LST_field": "day_LST_per10",
+    "LST_definition": "MODIS/061/MOD11A2 May-Oct daytime LST, area-time weighted, relaxed QA, per 10 degrees C",
+    "strict_pairing_retained": true,
+    "thresholds_unchanged": true
+  },
+  "terms": {
+    "exposure": "pm25_iqr",
+    "interaction": "pm25_iqr:ses_baseline_std",
+    "offset": "log(population)",
+    "fixed_effects": "county + year",
+    "cluster": "county"
+  },
+  "formulas": {
+    "M0": "pm25_iqr + pm25_iqr:ses_baseline_std + C(county_model) + C(year_model)",
+    "M1": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + C(county_model) + C(year_model)",
+    "M2": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + C(county_model) + C(year_model)",
+    "M2P": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + precipitation_fs_std_extension + C(county_model) + C(year_model)",
+    "M3": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + C(county_model) + C(year_model)",
+    "M3L": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + day_LST_per10 + C(county_model) + C(year_model)",
+    "M3P_joint": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + precipitation_fs_std_extension + C(county_model) + C(year_model)",
+    "M3PL_joint": "pm25_iqr + pm25_iqr:ses_baseline_std + age65_std_v7 + density_std_v7 + drought_d1_fs_std_v7 + temperature_fs_std_v7 + nonwildfire_pm25_std_v7 + ozone_std_v7 + precipitation_fs_std_extension + day_LST_per10 + C(county_model) + C(year_model)"
+  },
+  "scope": {
+    "core_registered_models": [
+      "O01_baseline_SES_fixed_2006_2020",
+      "O02_Census_adjusted_2009_2020",
+      "O03_state_year_PPML_2009_2020",
+      "O04_drought_adjusted_2009_2020",
+      "O05_exclude_2020_drought",
+      "O06_timevarying_SES_2010_2020",
+      "O07_lag1_2010_2020",
+      "O08_lead1_placebo_2009_2019",
+      "O09_three_state_air_2009_2020",
+      "O10_temperature_adjusted_2009_2020",
+      "O11_full_environment_2009_2020"
+    ],
+    "period_models": ["F06_period_2009_2016", "F07_period_2017_2020"],
+    "omission_samples": ["A_full", "B_exclude_2020", "C_exclude_CA", "D_exclude_2020_and_CA", "E_exclude_CA_x_2020_only"],
+    "common_models": ["M0", "M1", "M2", "M2P", "M3", "M3L", "M3P_joint", "M3PL_joint"],
+    "new_models": ["M3P_joint", "M3PL_joint"],
+    "excluded": ["smoking", "new diseases", "new exposure products", "new QA thresholds", "new periods", "nonlinear searches", "new interactions", "triple interactions"]
+  }
+}

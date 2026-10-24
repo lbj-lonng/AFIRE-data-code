@@ -1,0 +1,26 @@
+{
+  "version": "experiment3_county_imputation_refresh_v1",
+  "outcome": "COPD",
+  "years": [2009, 2020],
+  "primary_imputation": "fixed_EB_B0_0_9",
+  "imputation_scenarios": [
+    "fixed_EB_B0_0_9",
+    "fixed_EB_B1_1_9",
+    "hierarchical_EB_B0_0_9",
+    "hierarchical_EB_B1_1_9"
+  ],
+  "hierarchical_draw_selection": {
+    "available_draws": 90,
+    "chains": 3,
+    "draws_per_chain_available": 30,
+    "selected_within_chain_zero_based": [0, 3, 6, 9, 12, 15, 18, 21, 24, 27],
+    "total_selected": 30,
+    "reason": "balanced across chains; same m as fixed-EB scenarios; health-model FMI was below 1%"
+  },
+  "common_sample_models": ["M0", "M1", "M2", "M2P", "M3"],
+  "lst_branches": ["strict_day", "relaxed_day", "strict_night", "relaxed_night"],
+  "lst_model_families": ["M2", "M3"],
+  "supplemental_effect_modifiers": ["poverty_baseline", "time_varying_SES"],
+  "excluded": ["smoking", "triple_interactions", "new_outcomes", "model_search"],
+  "selection_rule": "never select an imputation or QA scenario by the health-model P value"
+}

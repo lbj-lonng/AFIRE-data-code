@@ -1,0 +1,14 @@
+{
+  "python": "3.12.14",
+  "note": "Actual package-verification/plotting environment; not the original model-fitting lockfile.",
+  "numpy": "2.5.3",
+  "pandas": "3.0.1",
+  "matplotlib": "3.11.1",
+  "shapely": "2.1.2",
+  "pyproj": "3.8.0",
+  "pyshp": "3.1.6",
+  "PyMuPDF": "1.28.2",
+  "Pillow": "12.3.0",
+  "scipy": "1.18.1",
+  "statsmodels": "not present in this verification environment"
+}

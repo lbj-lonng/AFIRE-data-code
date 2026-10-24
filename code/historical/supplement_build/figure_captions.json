@@ -1,0 +1,65 @@
+{
+  "1": {
+    "old_number": "S6",
+    "cn_title": "六州县级汇总烟雾暴露的年度分布",
+    "en_title": "Annual smoke exposure aggregated from counties in the six study states",
+    "cn_caption": "颜色表示2009—2020年六个研究州的县人口加权年均野火烟雾PM₂.₅浓度（μg/m³），共72个州—年。先对每个县取得既有年度浓度，再以对应县—年人口作为州内权重；没有对已转换的浓度重复作年度换算。AZ、CA、CO、ID、OR和WA分别为Arizona、California、Colorado、Idaho、Oregon和Washington。这是研究县汇总的州级描述，不是州等权全国均值，也不是各县等权均值。图中不包含推断区间；颜色差异不是显著性检验。源数据见Supplementary_Figure_1.csv。",
+    "en_caption": "Colors show annual county-population-weighted wildfire-smoke PM₂.₅ concentrations (μg/m³) in six study states during 2009–2020 (72 state–years). Existing county annual concentrations were weighted by the corresponding county–year populations; no additional annual conversion was applied. AZ, CA, CO, ID, OR and WA denote Arizona, California, Colorado, Idaho, Oregon and Washington, respectively. These summaries aggregate the study counties and are neither a state-equal national average nor county-equal averages. No inferential intervals or significance tests are displayed. Source data are provided in Supplementary_Figure_1.csv.",
+    "figure_file": "figures/Supplementary_Figure_1.png",
+    "source_data": "source_data/figures/Supplementary_Figure_1.csv"
+  },
+  "2": {
+    "old_number": "S7",
+    "cn_title": "六州内部县级长期烟雾暴露分布",
+    "en_title": "Within-state distributions of long-term county smoke exposure",
+    "cn_caption": "每个蓝点表示一个县在2009—2020年的年均野火烟雾PM₂.₅浓度的时间均值（μg/m³），全部256县均显示；水平偏移仅用于减少重叠。箱体为县际第25—75百分位，黑线为中位数，须延伸至1.5倍箱体四分位距范围内的最远观测值，橙色菱形为州内各县等权均值。须外观测仍以蓝点显示。各州县数依次为AZ 15、CA 58、CO 64、ID 44、OR 36、WA 39。该县际分布及等权均值不等于人口加权暴露；箱须不是置信区间。源数据见Supplementary_Figure_2.csv。",
+    "en_caption": "Each blue point represents the temporal mean of annual wildfire-smoke PM₂.₅ concentration (μg/m³) during 2009–2020 for one county; all 256 counties are shown. Horizontal displacement only reduces overplotting. Boxes span county-level 25th–75th percentiles, black lines indicate medians, whiskers extend to the most extreme observed values within 1.5 box interquartile ranges, and orange diamonds show county-equal means. Observations beyond the whiskers remain visible as blue points. County counts are 15 in AZ, 58 in CA, 64 in CO, 44 in ID, 36 in OR and 39 in WA. These distributions and equal-weight means are not population-weighted exposures; boxplot ranges are not confidence intervals. Source data are provided in Supplementary_Figure_2.csv.",
+    "figure_file": "figures/Supplementary_Figure_2.png",
+    "source_data": "source_data/figures/Supplementary_Figure_2.csv"
+  },
+  "3": {
+    "old_number": "S5",
+    "cn_title": "分死因死亡分配数组的父子包含关系诊断",
+    "en_title": "Parent–child nesting diagnostics for separately allocated cause-specific counts",
+    "cn_caption": "a，在每个包含关系的92,160次县—年—分配编号比较（3,072县—年×30份既有分配）中，子类计数超过父类的次数。b，至少一份分配存在该问题的县—年数（蓝色），以及分配均值仍存在该问题的县—年数（橙色）。诊断覆盖COPD与慢性下呼吸道疾病（CLRD）、CLRD与呼吸系统疾病（RESP）、缺血性心脏病（IHD）与循环系统疾病（CIRC）三个应有包含关系。不同死因中相同编号的数组不是联合后验抽样，因此这些是数组不一致次数，不是联合后验违反概率；各关系的计数不能相加为不重复事件数。图中不提供推断区间。源数据见Supplementary_Figure_3.csv。",
+    "en_caption": "a, Comparisons in which the child count exceeds its parent among 92,160 county–year–allocation-index comparisons per relation (3,072 county–years × 30 existing allocations). b, County–years with an inconsistency in any allocation (blue) or in the mean allocated count (orange). The expected nesting relations are COPD within chronic lower respiratory diseases (CLRD), CLRD within respiratory-system diseases (RESP), and ischemic heart disease (IHD) within circulatory-system diseases (CIRC). Equally numbered arrays for different causes are not joint posterior draws. Counts therefore diagnose array inconsistencies, not joint posterior violation probabilities, and cannot be added across relations as distinct events. No inferential intervals are shown. Source data are provided in Supplementary_Figure_3.csv.",
+    "figure_file": "figures/Supplementary_Figure_3.png",
+    "source_data": "source_data/figures/Supplementary_Figure_3.csv"
+  },
+  "4": {
+    "old_number": "S1",
+    "cn_title": "五类结局在全部评价劣势水平的条件烟雾关联",
+    "en_title": "Complete conditional smoke associations across disadvantage levels",
+    "cn_caption": "a–e，依次为COPD、慢性下呼吸道疾病（CLRD）、呼吸系统疾病（RESP）、循环系统疾病（CIRC）和缺血性心脏病（IHD）。点为固定烟雾IQR（0.678107947271523 μg/m³）增加对应的条件死亡率百分比变化100×(RR−1)，在固定基线劣势指数−2、−1、0、+1和+2 SD处评价；横线为保留主效应与交互项协方差、按既有Rubin规则合并的普通双侧95%置信区间。每个结局使用256县、3,072县—年及30份既有分配；分配不是独立研究重复。虚线为零关联。全部25个条件对比均显示，包括负向和跨零区间；这些不是Holm同时区间，正交互也不意味着每个劣势水平的条件关联均为正。源数据见Supplementary_Figure_4.csv。",
+    "en_caption": "a–e, COPD, chronic lower respiratory diseases (CLRD), respiratory-system diseases (RESP), circulatory-system diseases (CIRC) and ischemic heart disease (IHD), respectively. Points show conditional mortality-rate changes, 100 × (RR − 1), per fixed smoke IQR (0.678107947271523 μg/m³) at −2, −1, 0, +1 and +2 SD of fixed baseline disadvantage. Horizontal lines are saved ordinary two-sided 95% confidence intervals, retaining main-effect–interaction covariance and the existing Rubin pooling procedure. Each outcome uses 256 counties, 3,072 county–years and 30 allocated datasets, not independent study replicates. Dashed lines indicate zero association. All 25 contrasts, including negative and zero-crossing intervals, are displayed. These are not Holm simultaneous intervals; positive interaction does not establish positive conditional association at every disadvantage level. Source data are provided in Supplementary_Figure_4.csv.",
+    "figure_file": "figures/Supplementary_Figure_4.png",
+    "source_data": "source_data/figures/Supplementary_Figure_4.csv"
+  },
+  "5": {
+    "old_number": "S2",
+    "cn_title": "共同样本上全部环境调整模型的交互估计",
+    "en_title": "Interaction estimates across all common-sample environmental specifications",
+    "cn_caption": "a–e，五类结局依次为COPD、CLRD、RESP、CIRC和IHD（分别为慢性阻塞性肺疾病、慢性下呼吸道疾病、呼吸系统疾病、循环系统疾病和缺血性心脏病）。点为烟雾增加一个固定IQR时，每增加1 SD基线劣势对应的率比之比百分比变化100×(RRR−1)；横线为普通双侧95%置信区间，虚线为零。全部40项估计来自C块真实共同样本：六州256县、3,062县—年及对应的30份既有分配。M0含烟雾、交互及县/年份效应；M1加入年龄结构和人口密度；M2再加入干旱和温度；M2P为M2加降水；M3为M2加非野火PM₂.₅和臭氧，本身不含降水；后缀L、P_joint、PL_joint分别加入LST、降水、两者。区间未经Holm同时校正；未估计跨模型差值区间，不据区间重叠检验模型差异。源数据见Supplementary_Figure_5.csv。",
+    "en_caption": "a–e, COPD, chronic lower respiratory diseases (CLRD), respiratory-system diseases (RESP), circulatory-system diseases (CIRC) and ischemic heart disease (IHD). Points show 100 × (RRR − 1), the interaction per fixed smoke IQR and 1 SD higher baseline disadvantage; lines show ordinary two-sided 95% confidence intervals and dashed lines indicate zero. All 40 estimates use the frozen C-block common sample: 256 counties, 3,062 county–years and corresponding 30 allocated datasets. M0 includes smoke, interaction and county/year effects; M1 adds age structure and population density; M2 adds drought and temperature; M2P adds precipitation to M2. M3 adds non-wildfire PM₂.₅ and ozone to M2, without precipitation. Suffixes L, P_joint and PL_joint add LST, precipitation, and both, respectively. Intervals are not Holm simultaneous intervals. No cross-model difference intervals were estimated; interval overlap does not test model differences. Source data are provided in Supplementary_Figure_5.csv.",
+    "figure_file": "figures/Supplementary_Figure_5.png",
+    "source_data": "source_data/figures/Supplementary_Figure_5.csv"
+  },
+  "6": {
+    "old_number": "S3",
+    "cn_title": "定向删除地区和年份后的交互估计",
+    "en_title": "Interaction estimates after targeted omission of places and years",
+    "cn_caption": "a–e，依次为COPD、慢性下呼吸道疾病（CLRD）、呼吸系统疾病（RESP）、循环系统疾病（CIRC）和缺血性心脏病（IHD）。点为固定烟雾IQR与1 SD劣势的交互百分比100×(RRR−1)，横线为普通双侧95%置信区间，虚线为零。五行分别使用完整样本（3,072县—年）、删除2020年（2,816）、删除California（CA；2,376）、删除CA所有年份及所有州2020年（2,178），以及仅删除CA的2020年记录（3,014）。全部25项已存估计及不利区间均保留，各模型沿用固定尺度和30份既有分配。样本支持发生改变；这些比较不是正式跨模型差值检验，不能用于归因某地区或年份“造成”交互。区间不是Holm同时区间。源数据见Supplementary_Figure_6.csv。",
+    "en_caption": "a–e, COPD, chronic lower respiratory diseases (CLRD), respiratory-system diseases (RESP), circulatory-system diseases (CIRC) and ischemic heart disease (IHD). Points show interaction changes, 100 × (RRR − 1), per fixed smoke IQR and 1 SD disadvantage; lines are ordinary two-sided 95% confidence intervals and dashed lines indicate zero. Rows use the full sample (3,072 county–years), omit 2020 (2,816), omit California (CA; 2,376), omit all CA records and all 2020 records (2,178), or omit only CA records in 2020 (3,014). All 25 saved estimates, including unfavorable intervals, retain fixed scales and 30 allocated datasets per fit. These comparisons change sample support, do not test cross-model differences, and cannot establish that a place or year caused the interaction. Intervals are not Holm simultaneous intervals. Source data are provided in Supplementary_Figure_6.csv.",
+    "figure_file": "figures/Supplementary_Figure_6.png",
+    "source_data": "source_data/figures/Supplementary_Figure_6.csv"
+  },
+  "7": {
+    "old_number": "S4",
+    "cn_title": "严格和宽松LST质量控制分支内的配对调整",
+    "en_title": "Paired LST adjustments within strict and relaxed quality-control branches",
+    "cn_caption": "a–e，依次为COPD、慢性下呼吸道疾病（CLRD）、呼吸系统疾病（RESP）、循环系统疾病（CIRC）和缺血性心脏病（IHD）。点为固定烟雾IQR与1 SD劣势的交互百分比100×(RRR−1)，横线为普通双侧95%置信区间；虚线为零。r/s表示宽松/严格LST质量控制；−L/+L表示同一分支、同一样本不加入/加入LST。M2包含人口学、干旱及温度调整，M3再加入非野火PM₂.₅和臭氧。M2宽松/严格分支分别含3,072/1,946县—年（256/214县），M3为3,062/1,936县—年（256/213县）；严格分支含五州、不含Arizona。每项估计均使用30份既有分配。40项估计全部显示；分支之间不是同一样本，LST不是个人热暴露。未估计配对模型差值的协方差或区间，不据接近的点估计或重叠区间断言等效。源数据见Supplementary_Figure_7.csv。",
+    "en_caption": "a–e, COPD, chronic lower respiratory diseases (CLRD), respiratory-system diseases (RESP), circulatory-system diseases (CIRC) and ischemic heart disease (IHD). Points show interaction changes, 100 × (RRR − 1), per fixed smoke IQR and 1 SD disadvantage; lines are ordinary two-sided 95% confidence intervals and dashed lines indicate zero. r/s denotes relaxed/strict LST quality control; −L/+L denotes omission/inclusion of LST within the same branch and sample. M2 adjusts for demographics, drought and temperature; M3 additionally includes non-wildfire PM₂.₅ and ozone. Relaxed/strict branches contain 3,072/1,946 county–years (256/214 counties) for M2 and 3,062/1,936 county–years (256/213 counties) for M3. Strict branches cover five states and exclude Arizona. All 40 estimates use 30 allocated datasets per fit. Branches differ in sample support, and LST is not personal heat exposure. No paired-difference covariance or interval was estimated; similar estimates or overlapping intervals do not establish equivalence. Source data are provided in Supplementary_Figure_7.csv.",
+    "figure_file": "figures/Supplementary_Figure_7.png",
+    "source_data": "source_data/figures/Supplementary_Figure_7.csv"
+  }
+}

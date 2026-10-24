@@ -1,0 +1,16 @@
+{
+  "study_start_year": 2009,
+  "study_end_year": 2020,
+  "study_years": 12,
+  "outcomes": ["copd", "chronic_lower_respiratory", "respiratory_system", "circulatory_system", "ischemic_heart_disease"],
+  "labels": ["COPD", "CLRD", "RESP", "CIRC", "IHD"],
+  "icd10": ["J40-J44", "J40-J47", "J00-J98", "I00-I99", "I20-I25"],
+  "baseline_period": "2006-2010",
+  "smoke_iqr": 0.678107947271523,
+  "imputations": 30,
+  "imputation_version": "fixed_EB_B1_1_9",
+  "original_holm_family_size": 7,
+  "reporting_scope_change_only": true,
+  "refit_models": false,
+  "regenerate_imputations": false
+}

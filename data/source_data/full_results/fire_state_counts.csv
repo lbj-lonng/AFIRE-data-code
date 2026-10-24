@@ -1,0 +1,14 @@
+state,catalogue_record_assignments,in_six_state_region,state_abbr,state_fips
+California,23,True,CA,06
+Alaska,14,False,AK,02
+Oregon,12,True,OR,41
+Idaho,8,True,ID,16
+Nevada,7,False,NV,32
+Washington,7,True,WA,53
+Montana,6,False,MT,30
+Arizona,4,True,AZ,04
+New Mexico,4,False,NM,35
+Colorado,1,True,CO,08
+Florida,1,False,FL,12
+Georgia,1,False,GA,13
+Texas,1,False,TX,48

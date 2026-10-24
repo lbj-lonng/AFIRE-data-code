@@ -1,0 +1,9 @@
+﻿Model,Construction,County-years
+M0,Smoke + smoke × disadvantage + county/year fixed effects,3062
+M1,M0 + age + log(1+density),3062
+M2,M1 + drought + temperature,3062
+M2P,M2 + precipitation,3062
+M3,M2 + non-fire PM2.5 + ozone,3062
+M3L,M3 + LST,3062
+M3P_joint,M3 + precipitation,3062
+M3PL_joint,M3 + precipitation + LST,3062

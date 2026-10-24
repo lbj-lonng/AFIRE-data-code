@@ -1,0 +1,24 @@
+{
+  "version": "2026.10.24",
+  "study_period": [
+    2009,
+    2020
+  ],
+  "outcomes": [
+    "copd",
+    "chronic_lower_respiratory",
+    "respiratory_system",
+    "circulatory_system",
+    "ischemic_heart_disease"
+  ],
+  "main_figures": 4,
+  "supplementary_figures": 10,
+  "health_result_rows": 135,
+  "original_Holm_family_size": 7,
+  "status": "prepared_for_GitHub",
+  "repository": null,
+  "doi": null,
+  "license": "author confirmation pending",
+  "full_model_refit_tested": false,
+  "raw_source_rebuild_complete": false
+}

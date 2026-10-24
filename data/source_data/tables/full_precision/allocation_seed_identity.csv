@@ -1,0 +1,6 @@
+﻿outcome_id,abbreviation,seed,n_allocations
+copd,COPD,202609061,30
+chronic_lower_respiratory,CLRD,202609063,30
+respiratory_system,RESP,202609062,30
+circulatory_system,CIRC,202609065,30
+ischemic_heart_disease,IHD,202609066,30

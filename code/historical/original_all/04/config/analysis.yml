@@ -1,0 +1,7 @@
+project_version: v7_final
+primary_cause: copd
+primary_model: O10_temperature_adjusted_2009_2020
+minimum_successful_imputations: 25
+ses_marginal_values: [-2, -1, 0, 1, 2]
+study_states: [AZ, CA, CO, ID, OR, WA]
+default_workers: 2

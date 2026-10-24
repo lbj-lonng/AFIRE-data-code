@@ -1,0 +1,6 @@
+﻿Outcome,Model,County-years,Interaction (%),Ordinary 95% CI,Unadjusted P,Original 7-test Holm P
+COPD,reference,3072,0.752,0.326 to 1.179,0.000521,0.00312
+CLRD,reference,3072,0.751,0.314 to 1.191,0.000751,0.00376
+RESP,reference,3072,0.704,0.373 to 1.036,3.01e−05,0.000211
+CIRC,reference,3072,0.299,0.092 to 0.506,0.00454,0.0136
+IHD,reference,3072,0.552,0.198 to 0.907,0.0022,0.0088

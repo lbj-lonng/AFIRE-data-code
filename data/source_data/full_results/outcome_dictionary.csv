@@ -1,0 +1,6 @@
+outcome_id,outcome_name,icd10,name_en,short_en
+copd,慢性阻塞性肺疾病,J40-J44,Chronic obstructive pulmonary disease,COPD
+chronic_lower_respiratory,慢性下呼吸道疾病,J40-J47,Chronic lower respiratory disease,Chronic lower respiratory
+respiratory_system,呼吸系统疾病,J00-J98,Respiratory system disease,Respiratory system
+circulatory_system,循环系统疾病,I00-I99,Circulatory system disease,Circulatory system
+ischemic_heart_disease,缺血性心脏病,I20-I25,Ischaemic heart disease,Ischaemic heart

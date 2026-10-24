@@ -1,0 +1,47 @@
+project: Afire_project_v6_1_realdata_fixed
+study:
+  states: [AZ, CA, CO, ID, OR, WA]
+  state_fips_unpadded_text: ['4', '6', '8', '16', '41', '53']
+  years: [2006, 2020]
+  geography: county
+quality_control:
+  required_coverage_pct: 95
+  no_fabricated_values: true
+  smoking_backfill_to_early_years: false
+sources:
+  noaa_climate_at_a_glance:
+    provider: NOAA NCEI
+    endpoint_template: https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/county/time-series/{location}/{parameter}/land/{timescale}/{month}/{start}-{end}/data.csv
+    variables:
+      annual_temperature: [tavg, 12, 12]
+      fireseason_temperature: [tavg, 6, 10]
+      annual_precipitation: [pcp, 12, 12]
+      fireseason_precipitation: [pcp, 6, 10]
+  cdc_pm25:
+    provider: CDC Tracking / EPA Downscaler
+    dataset_id: 53mz-4zqd
+    preferred_field: pm25_pop_pred
+  cdc_ozone:
+    provider: CDC Tracking / EPA Downscaler
+    dataset_id: 3vxk-q2jk
+    preferred_field: o3_pop_pred
+  census_acs:
+    provider: U.S. Census Bureau ACS 5-year
+    api_key_env: CENSUS_API_KEY
+    main_years: [2009, 2020]
+  census_gazetteer:
+    provider: U.S. Census Bureau
+    url: https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2020_Gazetteer/2020_Gaz_counties_national.zip
+  cdc_places_smoking:
+    provider: CDC PLACES
+    estimate_year_releases:
+      2018: mssc-ksj7
+      2019: kmvs-jkvx
+      2020: xyst-f73f
+    role: optional_smoking_sensitivity
+  nchs_urban_rural:
+    provider: CDC NCHS
+    role: optional
+  hrsa_ahrf:
+    provider: HRSA Area Health Resources Files
+    role: optional

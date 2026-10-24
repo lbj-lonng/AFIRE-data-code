@@ -1,0 +1,6 @@
+﻿outcome_id,Abbreviation,Outcome,ICD-10
+copd,COPD,Chronic obstructive pulmonary disease,J40–J44
+chronic_lower_respiratory,CLRD,Chronic lower respiratory diseases,J40–J47
+respiratory_system,RESP,Respiratory-system diseases,J00–J98
+circulatory_system,CIRC,Circulatory-system diseases,I00–I99
+ischemic_heart_disease,IHD,Ischaemic heart disease,I20–I25

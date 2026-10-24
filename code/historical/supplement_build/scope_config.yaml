@@ -1,0 +1,17 @@
+{
+  "base": "D:/postgraduate/wildfire/9.10/9.15/AFIRE_2009_2020_five_outcomes_20260915_194616",
+  "study_start_year": 2009,
+  "study_end_year": 2020,
+  "study_years": 12,
+  "outcomes": ["copd", "chronic_lower_respiratory", "respiratory_system", "circulatory_system", "ischemic_heart_disease"],
+  "labels": ["COPD", "CLRD", "RESP", "CIRC", "IHD"],
+  "original_holm_family_size": 7,
+  "smoke_iqr": 0.678107947271523,
+  "imputations": 30,
+  "refit_models": false,
+  "regenerate_imputations": false,
+  "table_map": {"S1":1,"S2":2,"S17":3,"S18":4,"S10":5,"S11":6,"S21":7,"S12":8,"S13a":9,"S13b":10,"S14":11,"S4":12,"S3":13,"S5":15,"S6":16,"S7":17,"S8":18,"S9":19,"S15":20,"S16":21,"S23":22},
+  "data_map": {"S20":1,"S19":2,"S22":3},
+  "figure_map": {"S6":1,"S7":2,"S5":3,"S1":4,"S2":5,"S3":6,"S4":7},
+  "section_map": {"S1":"Supplementary Methods 1","S2":"Supplementary Methods 2–3","S3":"Supplementary Methods 4","S4":"Supplementary Note 4","S5":"Supplementary Methods 6","S6":"Supplementary Methods 7","S7":"Supplementary Note 5","S8":"Supplementary Methods 5","S9":"Supplementary Figures 1–7","S10":"Supplementary Discussion","S11":"Supplementary Methods 2 and Note 1","S12":"Supplementary Methods 4–5 and Note 3","S13":"Supplementary Note 6","S14":"Supplementary Methods 2 and Note 1","S15":"Supplementary Methods 3 and Note 2","S16":"Supplementary Note 5","S17":"Supplementary References"}
+}
