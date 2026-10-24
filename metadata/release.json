@@ -15,10 +15,11 @@
   "supplementary_figures": 10,
   "health_result_rows": 135,
   "original_Holm_family_size": 7,
-  "status": "prepared_for_GitHub",
-  "repository": null,
+  "status": "public_on_GitHub",
+  "repository": "https://github.com/lbj-lonng/AFIRE-data-code",
   "doi": null,
   "license": "author confirmation pending",
   "full_model_refit_tested": false,
-  "raw_source_rebuild_complete": false
+  "raw_source_rebuild_complete": false,
+  "analysis_snapshot_commit": "f0827efb77a9f2b615b15d36449b1b2e1030b918"
 }

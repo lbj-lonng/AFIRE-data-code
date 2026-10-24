@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/lbj-lonng/AFIRE-data-code",
+  "visibility": "public",
+  "public_access_verified_date": "2026-10-24",
+  "analysis_snapshot_commit": "f0827efb77a9f2b615b15d36449b1b2e1030b918",
+  "fixed_data_url": "https://github.com/lbj-lonng/AFIRE-data-code/tree/f0827efb77a9f2b615b15d36449b1b2e1030b918/data",
+  "fixed_code_snapshot_url": "https://github.com/lbj-lonng/AFIRE-data-code/tree/f0827efb77a9f2b615b15d36449b1b2e1030b918",
+  "verification_basis": "public repository page; remote main hash equals locally verified content-addressed commit",
+  "doi": null,
+  "software_license": "author confirmation pending",
+  "full_model_refit_validated": false
+}

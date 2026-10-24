@@ -5,6 +5,13 @@ This release supports the 2009–2020 wildfire-smoke exposure and mortality manu
 figures and Supplementary Figs. S1–S10. It combines frozen Source Data with archived
 original and subsequently extended implementations. It does not introduce new model fits.
 
+## Availability and version
+
+The analysis snapshot used for the availability statements is commit
+`f0827efb77a9f2b615b15d36449b1b2e1030b918`. See `AVAILABILITY_STATEMENTS_EN.txt` for
+current manuscript wording and `metadata/publication_record.json` for the verified
+public-access record. A GitHub commit identifies a version; it is not a DOI.
+
 ## Download and inspect
 
 Use **Code → Download ZIP** and extract the downloaded repository, or clone it:

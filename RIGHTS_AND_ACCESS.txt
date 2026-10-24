@@ -1,4 +1,4 @@
-Publication status: locally prepared release candidate. No repository DOI has been assigned.
+Publication status: publicly available on GitHub at https://github.com/lbj-lonng/AFIRE-data-code. No repository DOI has been assigned.
 No new open-source or data licence is granted by this packaging step. Author/institutional
 rights confirmation and a software licence remain to be supplied. Third-party datasets retain
 their original terms. Cite the original providers using data/Supplementary_References.bib.
